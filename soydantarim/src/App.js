@@ -11,6 +11,7 @@ import ProductE from './pages/products1/productE';
 import ProductF from './pages/products1/productF';
 import Header from './components/header';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route element={<ProductE />} path="/ürünler/productE" />
         <Route element={<ProductF />} path="/ürünler/productF" />
       </Routes>
+      <Footer/>
     </div>
   );
 }
