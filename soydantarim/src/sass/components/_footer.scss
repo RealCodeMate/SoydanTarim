@@ -1,9 +1,66 @@
 @import '../abstracts//variables';
 
 .footer {
-    height: 10vh;
     background-color: $color-secondary-light;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+    
+    &__container {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid rgb(121, 121, 121);
+        line-height: 2.5rem;
+
+        &-info {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            p{
+                margin-bottom: 0;
+            }
+        }
+
+        &-links {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                padding-left: 0;
+                grid-gap: 3rem;
+                margin-bottom: 0;
+            }
+        }
+
+        &-contact {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+
+            &-logos{
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__copyright {
+        padding: 2rem;
+    }
+
 }
