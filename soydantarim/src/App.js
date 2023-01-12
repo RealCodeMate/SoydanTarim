@@ -13,6 +13,7 @@ import Header from './components/header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/footer";
 import Contact from "./pages/contact";
+import About from "./pages/about";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route element={<ProductE />} path="/ürünler/productE" />
         <Route element={<ProductF />} path="/ürünler/productF" />
         <Route element={<Contact />} path="/iletişim" />
+        <Route element={<About />} path="/hakkımızda" />
       </Routes>
       <Footer/>
     </div>
