@@ -33,6 +33,9 @@ export default function Header() {
               <Nav.Link as={NavLink} to="/ürünler">
                 <h5>Ürünler</h5>
               </Nav.Link>
+              <Nav.Link as={NavLink} to="/galeri">
+                <h5>Galeri</h5>
+              </Nav.Link>
               <Nav.Link as={NavLink} to="/hakkımızda">
                 <h5>Hakkımızda</h5>
               </Nav.Link>
