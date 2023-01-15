@@ -1,17 +1,25 @@
 import react from "react";
 import CommentCarousel from '../components/carousel';
 import image from '../assets/landingImg.jpg'
+import image2 from '../assets/landingImg2.png'
 import "../sass/pages/_home.scss";
 
 export default function Home() {
     return (
         <div>
             <div className="landingPage">
-                <div className="landingPage__content">
-                    <h1>SOYDAN TARIM</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at nisl consequat, auctor augue et, facilisis diam. Ut euismod placerat lacus eu tempus. Sed quis ligula urna. Mauris facilisis massa mauris, eget gravida dolor tempus vel. Aenean feugiat nunc a ex imperdiet, eu egestas dolor ultricies</p>
-                    <a className="landingPage__button">Keşfet</a>
+            <div className="landingPage_left">
+            <img src={image2} className="landingPage_left_img" />
+                    
+                    </div>
+                <div className="landingPage_right">
+                    <div className="landingPage_right_content">
+                        <h1>SOYDAN TARIM</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at nisl consequat, auctor augue et, facilisis diam. Ut euismod placerat lacus eu tempus. Sed quis ligula urna. Mauris facilisis massa mauris, eget gravida dolor tempus vel. Aenean feugiat nunc a ex imperdiet, eu egestas dolor ultricies</p>
+                        <a className="landingPage__button">Keşfet</a>
+                    </div>
                 </div>
+                
             </div>
             <div className="landingImages">
                 <img src={image} className="img1" />

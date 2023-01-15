@@ -5,11 +5,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
+import "../sass/components/_header.scss";
 
 export default function Header() {
 
   return (
-    <Navbar key="lg" expand="lg" bg="light" sticky="top">
+    <Navbar key="lg" expand="lg" >
       <Container fluid>
         <Navbar.Brand as={NavLink} to="/">
           <img src={logo} />
