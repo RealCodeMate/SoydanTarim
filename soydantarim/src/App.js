@@ -14,6 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/footer";
 import Contact from "./pages/contact";
 import About from "./pages/about";
+import Gallery from "./pages/gallery";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route element={<ProductF />} path="/ürünler/productF" />
         <Route element={<Contact />} path="/iletişim" />
         <Route element={<About />} path="/hakkımızda" />
+        <Route element={<Gallery />} path="/galeri" />
       </Routes>
       <Footer/>
     </div>
