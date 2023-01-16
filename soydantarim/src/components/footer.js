@@ -14,6 +14,7 @@ export default function Footer() {
                         <div>
                             <li>Anasayfa</li>
                             <li>Ürünler</li>
+                            <li>Galeri</li>
                         </div>
                         <div>
                             <li>Hakkımızda</li>
