@@ -1,0 +1,51 @@
+@import '../../abstracts/variables';
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.pagination button {
+    width: 40px;
+    height: 40px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: gray;
+    color: #eee;
+    border-color: #eee;
+}
+
+.pagination button:first-child {
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+}
+
+.pagination button:first-child:active {
+    background: $color-secondary-dark;
+}
+
+.pagination button:last-child {
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+}
+
+.pagination button:last-child:active {
+    background: $color-secondary-dark;
+}
+
+.pagination button.active {
+    font-weight: 900;
+    border-color: #101010;
+    background: $color-secondary-dark;
+    color: #101010;
+}
