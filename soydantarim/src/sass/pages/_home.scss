@@ -1,227 +1,284 @@
-@import '../abstracts//variables';
+@import "../abstracts//variables";
 
 .landingPage {
-    height: 88vh;
-    max-width: 98vw;
-    margin: auto;
+  height: 100vh;
+  max-width: 95vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
+    &:after {
+      position: absolute;
+      content: "";
+      left: $x;
+      right: 0;
+      z-index: -1;
+      height: 100%;
+      max-width: 100%;
+      margin: auto;
+      filter: blur($spread);
+      background: linear-gradient(270deg, #9fbe6d, #f1c8125e);
+      background-size: 200% 200%;
+      animation: animateGlow $duration ease infinite;
+
+      @keyframes animateGlow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    }
+  }
+
+  .containerBlur {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 30vw;
+    text-align: center;
+    background-color: #ffffff;
+    @include backlight(0, 0, 5vw, 2, #9fbe6d, #4f6854, 8s);
+  }
+
+  .containerLandingPage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+
+    &_left {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      &_img {
+        height: 100%;
+        width: 100%;
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        // background: url("../../assets/tree3.jpg") center center/cover no-repeat;
+      }
+    }
+    &_right {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: normal;
+      position: relative;
+      z-index: 1;
+      &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #f1c8121e;
+        z-index: -1;
+      }
+      h2 {
+        font-size: 6.2rem;
+        color: $color-secondary-dark;
+        span {
+          color: $color-secondary-light;
+        }
+      }
+      h5 {
+        font-size: 2.6rem;
+        padding: 2rem 6rem;
+        color: $color-primary;
+      }
+      a {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        padding: 10px 80px;
+        color: #fff;
+        background-color: $color-secondary-light;
+        border-radius: 50px;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      .btn {
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .btn:hover {
+        box-shadow: 1px 1px 25px 10px $color-primary;
+      }
+
+      .btn:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          120deg,
+          transparent,
+          $color-primary,
+          transparent
+        );
+        transition: all 750ms;
+      }
+
+      .btn:hover:before {
+        left: 100%;
+      }
+    }
+  }
+}
+
+// ---------------------------
+
+.landingImages {
+  width: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: 2rem auto;
+
+  .img1 {
+    width: 20rem;
+    height: 15rem;
+  }
+}
+
+.landingInfo {
+  display: flex;
+  height: 40rem;
+  padding: 5rem;
+
+  &__slogan {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    &_left{
-        width: 60%;
-        height: 100%;
-        background: url('../../assets/landingImg.jpg') left center  no-repeat;
-        border-right: 5px solid #fff;
-        position: relative;
-        &::after{
-            content: "";
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: #000;
-            opacity: .3;
-            z-index: 0;
-        }
-        &_img{
-            height: 100%;
-            max-width: 50%;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            position: relative;
-            z-index: 100;
-        }
+
+    h3 {
+      font-size: 3rem;
+      color: #fff;
     }
-    &_right{
-        width: 40%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-        color: #fff;
-        background: url('../../assets/landingImg.jpg') right center  no-repeat;
-        position: relative;
+  }
 
-        &::after{
-            content: "";
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: #000;
-            opacity: .7;
-        }
-        &_content{
-            position: relative;
-            z-index: 100;
-            p{
-                margin-top: 2rem;
-                margin-bottom: 4rem ;
-            }
-            a{
-                cursor: pointer;
-                text-decoration: none;
-                font-size: 2rem;
-                color: #fff;
-                margin-top: 2rem;
-                padding: .5rem 3.5rem;
-                background-color: #d0b564;
-                border-radius: 100px;
-                transition: all 1s ;
-                &:hover{
-                    color: #000;
-                    background-color: #d0b56489;
-                }
-            }
-        }
-        
-        
-    }
-    
-    
-
-   
-
-    
-
-}
-
-
-
-.landingImages {
-    width: 70rem;
+  &__desc {
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $color-primary;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 2rem;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     text-align: center;
-    margin: 2rem auto;
-
-    .img1 {
-        width: 20rem;
-        height: 15rem;
-    }
-}
-
-.landingInfo {
-    display: flex;
-    height: 40rem;
-    padding: 5rem;
-
-    &__slogan {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-        h3 {
-            font-size: 3rem;
-        }
-    }
-
-    &__desc {
-        width: 50%;
-        padding: 1rem;
-        background-color: $color-secondary-light;
-        border-radius: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
+  }
 }
 
 .landingChoose {
+  display: flex;
+  max-width: 95vw;
+  margin: 0 auto;
+  height: 50rem;
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  background-color: $color-secondary-light;
+
+  &__button {
+    color: $color-black;
+    padding: 1rem 3rem;
+    background-color: $color-white;
+    border: 5px solid black;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.4s ease-in;
+  }
+
+  &__button:hover {
+    background-color: $color-black;
+    color: $color-white;
+  }
+
+  &__texts {
+    width: 50%;
+    height: 70%;
+    max-height: fit-content;
+    padding: 4rem;
     display: flex;
-    max-width: 95vw;
-    margin: 0 auto;
-    height: 50rem;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-    background-color: $color-secondary-light;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2.5rem;
+  }
 
-    &__button {
-        color: $color-black;
-        padding: 1rem 3rem;
-        background-color: $color-white;
-        border: 5px solid black;
-        border-radius: 2rem;
-        font-size: 1.5rem;
-        text-decoration: none;
-        transition: .4s ease-in;
+  .services {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 2rem;
+
+    &__heading {
+      display: flex;
+      flex-direction: row;
+
+      p {
+        margin-right: 1rem;
+      }
     }
+  }
 
-    &__button:hover {
-        background-color: $color-black;
-        color: $color-white;
+  &__image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .img1 {
+      width: 70%;
+      height: 60%;
     }
-
-    &__texts {
-        width: 50%;
-        height: 70%;
-        max-height: fit-content;
-        padding: 4rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 2.5rem;
-    }
-
-
-    .services {
-        display: grid;
-        grid-template-columns: auto auto;
-        margin-top: 2rem;
-
-        &__heading {
-            display: flex;
-            flex-direction: row;
-
-            p {
-                margin-right: 1rem;
-            }
-        }
-    }
-
-    &__image {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-        .img1 {
-            width: 70%;
-            height: 60%;
-        }
-    }
+  }
 }
 
 .comments {
-    height: 70vh;
-    max-width: 95vw;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    &__header{
-        text-align: center;
-    }
-    
+  height: 70vh;
+  max-width: 95vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  &__header {
+    text-align: center;
+  }
 
-    &__slider {
-        height: 90%;
-        justify-content: center;
-        .img1 {
-            margin-top: 1rem;
-            width: 70%;
-            height: 80%;
-        }
+  &__slider {
+    height: 90%;
+    justify-content: center;
+    .img1 {
+      margin-top: 1rem;
+      width: 70%;
+      height: 80%;
     }
-
+  }
 }

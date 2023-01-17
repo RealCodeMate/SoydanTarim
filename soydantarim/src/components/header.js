@@ -4,13 +4,12 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logo.png";
 import "../sass/components/_header.scss";
+import logo from "../assets/logo.png";
 
 export default function Header() {
-
   return (
-    <Navbar key="lg" expand="lg" >
+    <Navbar key="lg" expand="lg">
       <Container fluid>
         <Navbar.Brand as={NavLink} to="/">
           <img src={logo} />
@@ -27,7 +26,7 @@ export default function Header() {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-3">
+            <Nav className="justify-content-start flex-grow-1 pe-3">
               <Nav.Link as={NavLink} to="/">
                 <h5>Anasayfa</h5>
               </Nav.Link>
@@ -40,11 +39,14 @@ export default function Header() {
               <Nav.Link as={NavLink} to="/hakkımızda">
                 <h5>Hakkımızda</h5>
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/iletişim">
-                <h5>İletişim</h5>
-              </Nav.Link>
-
             </Nav>
+            <Nav.Link
+              className="justify-content-end"
+              as={NavLink}
+              to="/iletişim"
+            >
+              <h5>İletişim</h5>
+            </Nav.Link>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
