@@ -5,24 +5,26 @@
   margin: auto;
   border-bottom: 1px solid #f8f8f870;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
 }
+
 ul {
   list-style: none;
   padding-left: 0;
 }
+
 .footer {
-  background: linear-gradient(
-    to right,
-    $color-secondary-light 0%,
-    $color-primary 39%
-  );
+  background: linear-gradient(to right,
+      $color-secondary-light 0%,
+      $color-primary 39%);
   padding: 20px 0;
   padding-top: 70px;
   position: relative;
   z-index: 1;
+
   &::before {
     content: "";
     position: absolute;
@@ -34,16 +36,19 @@ ul {
     opacity: 0.2;
     z-index: -1;
   }
+
   p {
     text-align: center;
     margin-top: 1rem;
     color: rgba(255, 255, 255, 0.733);
   }
 }
+
 .footer-col {
   width: 25%;
   padding: 0 15px;
 }
+
 .footer-col h4 {
   font-size: 1.1rem;
   color: #ffffff;
@@ -52,6 +57,7 @@ ul {
   font-weight: 500;
   position: relative;
 }
+
 .footer-col h4::before {
   content: "";
   position: absolute;
@@ -62,6 +68,7 @@ ul {
   box-sizing: border-box;
   width: 50px;
 }
+
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -75,84 +82,31 @@ ul {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.footer-col ul li a:hover {
+
+.footer-col ul li svg:hover {
   color: #ffffff;
   padding-left: 8px;
 }
-.footer-col .social-links a {
+
+.footer-col .social-links svg {
   display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
   margin-right: 12px;
   text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
   color: #ffffff;
   transition: all 0.5s ease;
 }
 
-// .footer {
-//     background-color: $color-secondary-light;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 2rem;
+.twitterLogo:hover {
+  color: #1da1f2 !important;
+}
 
-//     &__container {
-//         width: 90%;
-//         display: flex;
-//         flex-direction: row;
-//         border-bottom: 1px solid rgb(121, 121, 121);
-//         line-height: 2.5rem;
+.facebookLogo:hover {
+  color: #3b5998 !important;
+}
 
-//         &-info {
-//             width: 30%;
-//             display: flex;
-//             flex-direction: column;
-//             padding: 1rem;
-//             p{
-//                 margin-bottom: 0;
-//             }
-//         }
-
-//         &-links {
-//             width: 40%;
-//             display: flex;
-//             flex-direction: column;
-//             align-items: center;
-//             padding: 1rem;
-
-//             ul {
-//                 list-style: none;
-//                 display: flex;
-//                 flex-direction: row;
-//                 padding-left: 0;
-//                 grid-gap: 3rem;
-//                 margin-bottom: 0;
-//             }
-//         }
-
-//         &-contact {
-//             width: 30%;
-//             display: flex;
-//             flex-direction: column;
-//             padding: 1rem;
-
-//             &-logos{
-//                 display: flex;
-//                 justify-content: space-evenly;
-//             }
-
-//             p{
-//                 margin-bottom: 0;
-//             }
-//         }
-//     }
-
-//     &__copyright {
-//         padding: 2rem;
-//     }
-
-// }
+.instagramLogo:hover {
+  color: #c32aa3 !important;
+}
