@@ -4,6 +4,14 @@ import { faTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg
 import "../sass/components/_footer.scss";
 
 export default function Footer() {
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+  
   return (
     <div>
       <footer className="footer">
@@ -71,7 +79,15 @@ export default function Footer() {
           </div>
         </div>
         <p>Copyright © 3rd Wave 2022. All rights reserved.</p>
+        <div className='scrollTop'>
+          <div class="arrow" onClick={handleScrollToTop}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </footer>
+
     </div>
 
     // <div className="footer">
