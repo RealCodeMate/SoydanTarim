@@ -1,34 +1,54 @@
-@import '../abstracts//variables';
+@import "../abstracts//variables";
+@import "../abstracts/mixins";
 
-.about {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
+.page-preview {
+  height: 100%;
+  &-header {
+    height: 70px;
 
-    &__top {
-        display: flex;
-        flex-direction: row;
-
-        &--image {
-            width: 50%;
-
-            .img1 {
-                width: 100%;
-                height: 90%;
-            }
-        }
-
-        &--text {
-            height: 100%;
-            width: 50%;
-            padding-left: 1rem;
-        }
+    h3 {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.4rem;
+      color: $color-primary;
     }
+  }
+  &-body {
+    height: calc(100%-70px);
+    text-align: center;
+    &-empty {
+      height: 427px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &-img-1 {
+      width: 889px;
+      height: 626px;
+      object-position: 50% 100%;
+      margin: -395px calc(((100% - 1140px) / 2)) 0 auto;
+      z-index: -1;
+      position: relative;
+    }
+    &-img-2 {
+      width: 728px;
+      height: 696px;
+      margin: -320px auto 0 calc(((100% - 40px) / 2));
+    }
+    &-about {
+      min-height: 734px;
+      width: 837px;
+      background: url("../../assets/vision.jpg") center center/cover no-repeat;
+      height: auto;
+      margin: -486px calc(((100% - 80px) / 2) + 68px) 60px auto;
+      position: relative;
+      z-index: 0;
 
-    &__middle {
-
-        &--banner {
+      &-info {
+        z-index: 100;
+        &-middle {
+          &-banner {
             width: 100%;
             height: 100%;
             display: flex;
@@ -37,88 +57,126 @@
             align-items: center;
             padding: 1rem;
 
-            &>* {
-                border-top: 5px solid $color-secondary-light;
-                height: 100%;
-                width: 32%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 1rem;
-                position: relative;
-                overflow: hidden;
-                z-index: 200;
+            & > * {
+              border-top: 5px solid $color-secondary-light;
+              height: 100%;
+              width: 32%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 1rem;
+              position: relative;
+              overflow: hidden;
+              z-index: 200;
+
+              &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 100%;
+                background: $color-secondary-light;
+                transition: 0.75s ease bottom;
+                z-index: -1;
+              }
+
+              &:hover {
+                color: $color-white;
 
                 &:before {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 100%;
-                    background: $color-secondary-light;
-                    transition: 0.75s ease bottom;
-                    z-index: -1;
+                  bottom: 0%;
                 }
-
-                &:hover {
-                    color: $color-white;
-
-                    &:before {
-                        bottom: 0%;
-                    }
-                }
+              }
             }
+          }
         }
-    }
+        &-bottom {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          max-width: 90%;
+          margin: auto;
 
-    &__bottom {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-
-        &--mission {
+          &-mission {
             display: flex;
             width: 100%;
             height: 100%;
-            margin-bottom: 1rem;
+            margin-bottom: 2.5rem;
 
             .mission {
-                background-color: $color-secondary-light-2;
-                width: 80%;
-                padding: 1rem;
-                margin-right: 1rem;
-
+              background-color: $color-secondary-light-2;
+              width: 80%;
+              padding: 1rem;
+              margin-right: 1rem;
             }
 
-            .img__mission {
-                width: 20%;
-                height: 15rem;
-                border-radius: 50%;
+            .img-mission {
+              width: 20%;
+              height: 12rem;
+              border-radius: 50%;
             }
-        }
+          }
 
-        &--vision {
+          &-vision {
             display: flex;
             width: 100%;
             height: 100%;
             margin-bottom: 1rem;
 
             .vision {
-                background-color: $color-secondary-light-2;
-                width: 80%;
-                padding: 1rem;
-                margin-left: 1rem;
-
+              background-color: $color-secondary-light-2;
+              width: 80%;
+              padding: 1rem;
+              margin-left: 1rem;
             }
 
-            .img__vision {
-                width: 20%;
-                height: 15rem;
-                border-radius: 50%;
+            .img-vision {
+              width: 20%;
+              height: 12rem;
+              border-radius: 50%;
             }
+          }
         }
+      }
     }
+  }
 }
+.containerBlur {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  z-index: 0;
+  @include backlight2(0, 0, 5vw, 2, 8s);
+}
+
+// .about {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     padding: 3rem;
+
+//     &__top {
+//         display: flex;
+//         flex-direction: row;
+
+//         &--image {
+//             width: 50%;
+
+//             .img1 {
+//                 width: 100%;
+//                 height: 90%;
+//             }
+//         }
+
+//         &--text {
+//             height: 100%;
+//             width: 50%;
+//             padding-left: 1rem;
+//         }
+//     }
+
+// }
