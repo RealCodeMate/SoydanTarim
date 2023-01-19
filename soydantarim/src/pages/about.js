@@ -1,103 +1,12 @@
 import "../sass/pages/_about.scss";
-import image from "../assets/about.jpeg";
-import mission from "../assets/mission.jpg";
-import vision from "../assets/vision.jpg";
+import image from '../assets/about.jpeg'
+import mission from '../assets/mission.jpg'
+import vision from '../assets/vision.jpg'
 
 export default function About() {
-  return (
-    <div className="containerBlur">
-      <div className="page-preview">
-        <div className="page-preview-header">
-          <h3>Hakkımızda</h3>
-        </div>
-        <div className="page-preview-body">
-          <div className="page-preview-body-empty"></div>
-          <img className="page-preview-body-img-1" src={image}></img>
-          <img className="page-preview-body-img-2" src={mission}></img>
-          <div className="page-preview-body-about">
-            <div className="page-preview-body-about-info">
-              <h3>Soydan Tarım Hakkında</h3>
-              <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat."
-              </p>
-
-              <div className="page-preview-body-about-info-middle">
-                <div className="page-preview-body-about-info-middle-banner">
-                  <div className="page-preview-body-about-info-middle-banner-1">
-                    <h3>Güvenilir</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
-                  <div className="page-preview-body-about-info-middle-banner-2">
-                    <h3>Profesyonel</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
-                  <div className="page-preview-body-about-info-middle-banner-3">
-                    <h3>Uzman</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="page-preview-body-about-info-bottom">
-                <div className="page-preview-body-about-info-bottom-mission">
-                  <div className="mission">
-                    <h1>Misyonumuz</h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing eLorem
-                      ipsum dolor sit amet, consectetur adipiscing eLorem ipsum
-                      dolor sit amet, consectetur adipiscing eLorem ipsum dolor
-                      sit amet, consectetur adipiscing eLorem ipsum dolor sit
-                      amet, consectetur adipiscing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
-                  <img src={mission} className="img-mission" />
-                </div>
-                <div className="page-preview-body-about-info-bottom-vision">
-                  <img src={vision} className="img-vision" />
-                  <div className="vision">
-                    <h1>Vizyonumuz</h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing eLorem
-                      ipsum dolor sit amet, consectetur adipiscing eLorem ipsum
-                      dolor sit amet, consectetur adipiscing eLorem ipsum dolor
-                      sit amet, consectetur adipiscing eLorem ipsum dolor sit
-                      amet, consectetur adipiscing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-{
-  /* <div className="about__top">
+    return (
+        <div className="about">
+            <div className="about__top">
                 <div className="about__top--image">
                     <img src={image} className="img1" />
                 </div>
@@ -139,5 +48,7 @@ export default function About() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-            </div> */
+            </div>
+        </div>
+    )
 }
