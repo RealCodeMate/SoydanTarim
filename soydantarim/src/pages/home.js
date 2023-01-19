@@ -4,12 +4,13 @@ import image from "../assets/landingImg.jpg";
 import wheat from "../assets/wheat.mp4";
 import "../sass/pages/_home.scss";
 import logo from "../assets/logo.png";
+import Partners from "../components/partners";
 
 export default function Home() {
   return (
     <div>
       <div className="landingPage">
-        <div className="containerBlur">
+        <div className="containerBlurHome">
           <div className="containerLandingPage">
             <div className="containerLandingPage_left">
               <div className="containerLandingPage_left_img">
@@ -105,6 +106,9 @@ export default function Home() {
         <div className="landingChoose__image">
           <img src={image} className="img1" />
         </div>
+      </div>
+      <div className="partners">
+        <Partners />
       </div>
       <div className="comments">
         <h1 className="comments__header">Müşteri Yorumları</h1>
