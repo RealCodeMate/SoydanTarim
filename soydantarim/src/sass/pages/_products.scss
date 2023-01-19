@@ -2,10 +2,10 @@
 .container {
   text-align: center;
   width: 100%;
-  height: 220px;
+  height: 180px;
   display: flex;
   align-items: center;
-  background: url("../../assets/products.jpg") top -40px center/cover no-repeat;
+  background: url("../../assets/productBg.png") center center/cover no-repeat;
   margin: 2.4rem auto;
   border-radius: 10px;
   position: relative;
@@ -18,7 +18,7 @@
     top: 0;
     left: 0;
     background-color: #000;
-    opacity: 0.6;
+    opacity: 0.3;
     z-index: -1;
     border-radius: 10px;
   }
@@ -44,7 +44,7 @@
   gap: 50px;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  background: url("../../assets/products.jpg") bottom center/cover no-repeat;
+  background: url("../../assets/productBg2.png") center center/cover no-repeat;
   position: relative;
   z-index: 100;
   a {
@@ -64,7 +64,7 @@
     top: 0;
     left: 0;
     background: #000;
-    opacity: 0.58;
+    opacity: 0.4;
     z-index: -1;
   }
   h3 {
