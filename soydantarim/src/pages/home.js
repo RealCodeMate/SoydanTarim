@@ -5,6 +5,13 @@ import wheat from "../assets/wheat.mp4";
 import "../sass/pages/_home.scss";
 import logo from "../assets/logo.png";
 import Partners from "../components/partners";
+import { Link } from "react-router-dom";
+import p1 from "../assets/1.jpg";
+import p2 from "../assets/2.jpg";
+import p3 from "../assets/3.jpg";
+import p4 from "../assets/4.jpg";
+import p5 from "../assets/5.jpg";
+import p6 from "../assets/6.jpg";
 
 export default function Home() {
   return (
@@ -62,6 +69,7 @@ export default function Home() {
           </p>
         </div>
       </div>
+
       <div className="landingChoose">
         <div className="landingChoose__texts">
           <h1>Neden Soydan Tarım?</h1>
@@ -107,14 +115,55 @@ export default function Home() {
           <img src={image} className="img1" />
         </div>
       </div>
-      <div className="partners">
-        <Partners />
+     
+      <div className="homeProducts">
+        <div className="hvr_img">
+          <Link to="/ürünler/productA" className="flex_products">
+            <img src={p1} style={{ height: "280px", width: "280px" }}></img>
+            <h5>Zirai İlaçlar</h5>
+          </Link>
+        </div>
+        <div className="hvr_img">
+          <Link to="/ürünler/productA" className="flex_products">
+            <img src={p2} style={{ height: "280px", width: "280px" }}></img>
+            <h5>Gübreler</h5>
+          </Link>
+        </div>
+        <div className="hvr_img">
+          
+          <Link to="/ürünler/productA" className="flex_products">
+            <img src={p3} style={{ height: "280px", width: "280px" }}></img>
+            <h5>Tohumlar</h5>
+          </Link>
+        </div>
+        <div className=" hvr_img">
+          
+          <Link to="/ürünler/productA" className="flex_products">
+            <img src={p4} style={{ height: "280px", width: "280px" }}></img>
+            <h5>Fideler</h5>
+          </Link>
+        </div>
+        <div className=" hvr_img">
+          <Link to="/ürünler/productA" className="flex_products">
+            <img src={p5} style={{ height: "280px", width: "280px" }}></img>
+            <h5>Tarım Aletleri</h5>
+          </Link>
+        </div>
+        <div className=" hvr_img">
+          <Link to="/ürünler/productA" className="flex_products">
+            <img src={p6} style={{ height: "280px", width: "280px" }}></img>
+            <h5>Zeytinyağı</h5>
+          </Link>
+        </div>
       </div>
       <div className="comments">
         <h1 className="comments__header">Müşteri Yorumları</h1>
         <div className="comments__slider">
           <CommentCarousel />
         </div>
+      </div>
+      <div className="partners">
+        <Partners />
       </div>
     </div>
   );
