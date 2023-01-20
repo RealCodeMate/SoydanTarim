@@ -156,15 +156,16 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      <div className="partners">
+        <Partners />
+      </div>
       <div className="comments">
         <h1 className="comments__header">Müşteri Yorumları</h1>
         <div className="comments__slider">
           <CommentCarousel />
         </div>
       </div>
-      <div className="partners">
-        <Partners />
-      </div>
+      
     </div>
   );
 }
