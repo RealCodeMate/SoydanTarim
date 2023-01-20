@@ -37,13 +37,11 @@
 .parent {
   text-align: center;
   max-width: 95vw;
-  margin: auto;
+  margin: 5rem auto;
+  padding: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: repeat(100px, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 50px;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   background: url("../../assets/productBg2.png") center center/cover no-repeat;
   position: relative;
   z-index: 100;
@@ -87,34 +85,18 @@
     margin-bottom: 3rem;
   }
 
-  .div1 {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-  .div2 {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-  .div3 {
-    grid-area: 1 / 3 / 2 / 4;
-  }
-  .div4 {
-    grid-area: 2 / 1 / 3 / 2;
-  }
-  .div5 {
-    grid-area: 2 / 2 / 3 / 3;
-  }
-  .div6 {
-    grid-area: 2 / 3 / 3 / 4;
-  }
-  .mg_2 {
-    margin-top: 2rem;
-  }
+
   .hvr_img {
+
     img {
       margin: 1rem;
       padding: 5px;
       background-color: rgba(236, 236, 236, 0.795);
       border-radius: 200px;
       transition: all 1s;
+      position: relative;
+      z-index: 0;
+     
     }
   }
   .hvr_img:hover {
