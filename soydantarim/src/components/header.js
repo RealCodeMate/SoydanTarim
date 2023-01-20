@@ -2,6 +2,7 @@ import react from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { NavLink } from "react-router-dom";
 import "../sass/components/_header.scss";
@@ -30,9 +31,17 @@ export default function Header() {
               <Nav.Link as={NavLink} to="/">
                 <h5>Anasayfa</h5>
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/ürünler">
-                <h5>Ürünler</h5>
-              </Nav.Link>
+              <NavDropdown title="Ürünler" id="basic-nav-dropdown" >
+                <NavDropdown.Item as={NavLink} to="/ürünler">Zirai İlaç</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item as={NavLink} to="/ürünler">Gübre</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item as={NavLink} to="/ürünler">Tohum</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item as={NavLink} to="/ürünler">Fide</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item as={NavLink} to="/ürünler">Tarım Aletleri</NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link as={NavLink} to="/galeri">
                 <h5>Galeri</h5>
               </Nav.Link>
