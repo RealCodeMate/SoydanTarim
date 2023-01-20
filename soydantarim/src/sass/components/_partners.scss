@@ -10,6 +10,11 @@
         .companyImg {
             width: 10rem;
             height: 10rem;
+            filter: grayscale(100%);
+            transition: all 1s;
+        }
+        .companyImg:hover {
+            filter: grayscale(0);
         }
     }
 }

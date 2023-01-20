@@ -1,5 +1,5 @@
 import '../sass/components/_partners.scss';
-import image from "../assets/landingImg.jpg";
+import image from "../assets/hektasLogo.png";
 export default function Partners() {
     return (
         <div className='partners'>
