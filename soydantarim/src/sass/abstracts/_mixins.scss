@@ -1,31 +1,27 @@
-@mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
+@mixin backlight() {
   &:after {
     position: absolute;
     content: "";
-    left: $x;
+    left: 0;
     right: 0;
     z-index: -1;
     height: 100%;
-    max-width: 100%;
+    width: 100%;
     margin: auto;
-    filter: blur($spread);
-    background: linear-gradient(270deg, #9fbe6d, #f1c8125e);
-    background-size: 200% 200%;
-    animation: animateGlow $duration ease infinite;
+     -webkit-filter: blur(10px);
+    -webkit-animation: 5s linear 2s infinite alternate changeBg;
+    @keyframes changeBg {
+      from {
+        background-color: #9fbe6d;
+      }
 
-    @keyframes animateGlow {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
+      to {
+        background-color: #f1c8125e;
       }
     }
   }
 }
+
 @mixin backlight2($x, $y, $spread, $size, $duration) {
   &:after {
     position: absolute;
@@ -46,9 +42,11 @@
       0% {
         background-position: 0% 50%;
       }
+
       50% {
         background-position: 100% 50%;
       }
+
       100% {
         background-position: 0% 50%;
       }
