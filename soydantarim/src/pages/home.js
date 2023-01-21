@@ -108,7 +108,7 @@ export default function Home() {
             </div>
           </div>
           <div className="landingChoose__button__wrapper">
-            <a className="landingChoose__button">Hakkımızda</a>
+            <a className="btn">Hakkımızda</a>
           </div>
         </div>
         <div className="landingChoose__image">
