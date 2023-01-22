@@ -12,6 +12,10 @@ import p3 from "../assets/3.jpg";
 import p4 from "../assets/4.jpg";
 import p5 from "../assets/5.jpg";
 import p6 from "../assets/6.jpg";
+import icon1 from "../assets/icon1.png";
+import icon2 from "../assets/icon2.png";
+import icon3 from "../assets/icon3.png";
+import icon4 from "../assets/icon4.png";
 
 export default function Home() {
   return (
@@ -82,30 +86,30 @@ export default function Home() {
             </p>
             <div className="services">
               <div className="services__heading">
-                <p>ICON</p>
-                <div>
-                  <h3>Servis 1</h3>
+                <img src={icon1} style={{ height: "50px", width: "50px", color: "white" }}></img>
+                <div className="services__texts">
+                  <h4>Mükemmel Hizmet</h4>
                   <p>Lorem ipsum dolor sit</p>
                 </div>
               </div>
               <div className="services__heading">
-                <p>ICON</p>
-                <div>
-                  <h3>Servis 2</h3>
+                <img src={icon4} style={{ height: "50px", width: "50px" }}></img>
+                <div className="services__texts">
+                  <h4>Temiz Çalışma</h4>
                   <p>Lorem ipsum dolor sit</p>
                 </div>
               </div>
               <div className="services__heading">
-                <p>ICON</p>
-                <div>
-                  <h3>Servis 3</h3>
+                <img src={icon3} style={{ height: "50px", width: "50px" }}></img>
+                <div className="services__texts">
+                  <h4>Kalite ve Güvenilirlik</h4>
                   <p>Lorem ipsum dolor sit</p>
                 </div>
               </div>
               <div className="services__heading">
-                <p>ICON</p>
-                <div>
-                  <h3>Servis 4</h3>
+                <img src={icon2} style={{ height: "50px", width: "50px" }}></img>
+                <div className="services__texts">
+                  <h4>Uzman Çiftçi</h4>
                   <p>Lorem ipsum dolor sit</p>
                 </div>
               </div>
@@ -119,7 +123,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+
       <div className="homeProducts">
         <h1 className="homeProducts__header">Ürünlerimiz</h1>
         <div className="homeProducts__elements">
