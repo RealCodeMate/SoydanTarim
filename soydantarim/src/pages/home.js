@@ -115,47 +115,51 @@ export default function Home() {
           <img src={image} className="img1" />
         </div>
       </div>
-     
+      
       <div className="homeProducts">
-        <div className="hvr_img">
-          <Link to="/ürünler/productA" className="flex_products">
-            <img src={p1} style={{ height: "280px", width: "280px" }}></img>
-            <h5>Zirai İlaçlar</h5>
-          </Link>
-        </div>
-        <div className="hvr_img">
-          <Link to="/ürünler/productA" className="flex_products">
-            <img src={p2} style={{ height: "280px", width: "280px" }}></img>
-            <h5>Gübreler</h5>
-          </Link>
-        </div>
-        <div className="hvr_img">
-          
-          <Link to="/ürünler/productA" className="flex_products">
-            <img src={p3} style={{ height: "280px", width: "280px" }}></img>
-            <h5>Tohumlar</h5>
-          </Link>
-        </div>
-        <div className=" hvr_img">
-          
-          <Link to="/ürünler/productA" className="flex_products">
-            <img src={p4} style={{ height: "280px", width: "280px" }}></img>
-            <h5>Fideler</h5>
-          </Link>
-        </div>
-        <div className=" hvr_img">
-          <Link to="/ürünler/productA" className="flex_products">
-            <img src={p5} style={{ height: "280px", width: "280px" }}></img>
-            <h5>Tarım Aletleri</h5>
-          </Link>
-        </div>
-        <div className=" hvr_img">
-          <Link to="/ürünler/productA" className="flex_products">
-            <img src={p6} style={{ height: "280px", width: "280px" }}></img>
-            <h5>Zeytinyağı</h5>
-          </Link>
+        <h1 className="homeProducts__header">Ürünlerimiz</h1>
+        <div className="homeProducts__elements">
+          <div className="hvr_img">
+            <Link to="/ürünler/productA" className="flex_products">
+              <img src={p1} style={{ height: "280px", width: "280px" }}></img>
+              <h5>Zirai İlaçlar</h5>
+            </Link>
+          </div>
+          <div className="hvr_img">
+            <Link to="/ürünler/productA" className="flex_products">
+              <img src={p2} style={{ height: "280px", width: "280px" }}></img>
+              <h5>Gübreler</h5>
+            </Link>
+          </div>
+          <div className="hvr_img">
+
+            <Link to="/ürünler/productA" className="flex_products">
+              <img src={p3} style={{ height: "280px", width: "280px" }}></img>
+              <h5>Tohumlar</h5>
+            </Link>
+          </div>
+          <div className=" hvr_img">
+
+            <Link to="/ürünler/productA" className="flex_products">
+              <img src={p4} style={{ height: "280px", width: "280px" }}></img>
+              <h5>Fideler</h5>
+            </Link>
+          </div>
+          <div className=" hvr_img">
+            <Link to="/ürünler/productA" className="flex_products">
+              <img src={p5} style={{ height: "280px", width: "280px" }}></img>
+              <h5>Tarım Aletleri</h5>
+            </Link>
+          </div>
+          <div className=" hvr_img">
+            <Link to="/ürünler/productA" className="flex_products">
+              <img src={p6} style={{ height: "280px", width: "280px" }}></img>
+              <h5>Zeytinyağı</h5>
+            </Link>
+          </div>
         </div>
       </div>
+
       <div className="partners">
         <Partners />
       </div>
@@ -165,7 +169,7 @@ export default function Home() {
           <CommentCarousel />
         </div>
       </div>
-      
+
     </div>
   );
 }
