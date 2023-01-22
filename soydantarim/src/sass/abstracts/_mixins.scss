@@ -1,5 +1,5 @@
 @mixin backlight() {
-  &:after {
+  &::before {
     position: absolute;
     content: "";
     left: 0;
