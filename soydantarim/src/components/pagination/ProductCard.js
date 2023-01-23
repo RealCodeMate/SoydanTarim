@@ -4,11 +4,11 @@ import "../../sass/components/pagination/_productCard.scss"
 
 const ProductCard = ({ image, name }) => {
     return (
-        <div className='card'>
-            <div className='card_image'>
+        <div className='cardProduct'>
+            <div className='cardProduct_image'>
                 <img src={image} alt={name} />
             </div>
-            <div className='card_info'>
+            <div className='cardProduct_info'>
                 <h2>{name}</h2>
                 <h3>Info</h3>
             </div>

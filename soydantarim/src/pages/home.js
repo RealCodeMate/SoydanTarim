@@ -165,7 +165,7 @@ export default function Home() {
                 <p class="card-hover__text">
                   Akasit, Defoliant, Fumigant ve daha fazlası.
                 </p>
-                <Link to="/ürünler/productA" className="card-hover__link">
+                <Link to="/ürünler" className="card-hover__link">
                   <span>Keşfet</span>
                   <svg
                     fill="none"
