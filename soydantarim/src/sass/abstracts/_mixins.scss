@@ -6,49 +6,17 @@
     right: 0;
     z-index: -1;
     height: 100%;
-    width: 100%;
+    max-width: 95%;
     margin: auto;
-     -webkit-filter: blur(10px);
+    -webkit-filter: blur(60px);
     -webkit-animation: 5s linear 2s infinite alternate changeBg;
     @keyframes changeBg {
       from {
-        background-color: #9fbe6d;
+        background-color: #a4be7bb7;
       }
 
       to {
-        background-color: #f1c8125e;
-      }
-    }
-  }
-}
-
-@mixin backlight2($x, $y, $spread, $size, $duration) {
-  &:after {
-    position: absolute;
-    content: "";
-    left: $x;
-    right: 0;
-    top: 200px;
-    z-index: -100;
-    height: 100%;
-    max-width: 100%;
-    margin: auto;
-    filter: blur($spread);
-    background: linear-gradient(270deg, #ffe92070, #aacb73);
-    background-size: 200% 200%;
-    animation: animateGlow $duration ease infinite;
-
-    @keyframes animateGlow {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
+        background-color: #a4be7be3;
       }
     }
   }
