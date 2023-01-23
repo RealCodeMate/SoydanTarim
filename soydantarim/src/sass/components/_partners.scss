@@ -1,20 +1,25 @@
 .partners {
-    text-align: center;
-    padding: 2rem;
-    &__company {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-        padding-top: 3rem;
-        .companyImg {
-            width: 10rem;
-            height: 10rem;
-            filter: grayscale(100%);
-            transition: all 1s;
-        }
-        .companyImg:hover {
-            filter: grayscale(0);
-        }
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  margin-bottom: 4rem;
+  h1 {
+    margin-bottom: 2rem;
+  }
+  &__company {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding-top: 3rem;
+    .companyImg {
+      width: 10rem;
+      height: 10rem;
+      filter: grayscale(100%);
+      transition: all 1s;
     }
+    .companyImg:hover {
+      filter: grayscale(0);
+    }
+  }
 }

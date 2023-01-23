@@ -1,49 +1,50 @@
 .container-carousel {
-    z-index: 0;
-    margin-top: 2rem;
+  z-index: 0;
+  margin-top: 2rem;
 }
 
 .d-block {
-    height: 25rem;
-    width: 70%;
-    margin: auto;
-    cursor: pointer;
+  height: 25rem;
+  width: 70%;
+  margin: auto;
+  cursor: pointer;
 }
 
 .comment {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5d9b669;
+  border-radius: 2rem;
+  box-shadow: rgb(240, 240, 240) -30px -30px 30px -10px inset,
+    rgb(255, 255, 255) 30px 30px 30px -18px inset;
+  &__container {
+    height: 70%;
+    width: 80%;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border-radius: 2rem;
-    box-shadow: rgba(164, 190, 123, 0.5) 0px 30px 60px -12px inset, rgba(164, 190, 123, 0.3) 0px 18px 36px -18px inset;
-    &__container {
-        height: 70%;
-        width: 80%;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
 
-        .header {
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 2rem;
-            .profileIcon{
-                width: 5rem;
-                height: 5rem;
-                border-radius: 2rem;
-            }
+    .header {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2rem;
+      .profileIcon {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 2rem;
+      }
 
-            &__namedate {
-                margin-left: 1rem;
-            }
-        }
+      &__namedate {
+        margin-left: 1rem;
+      }
     }
+  }
 }
 
 .carosuel-content h3 {
-    color: #000;
+  color: #000;
 }
