@@ -21,3 +21,28 @@
     }
   }
 }
+
+@mixin backlight2() {
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    z-index: -100;
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+    -webkit-filter: blur(50px);
+    -webkit-animation: 5s linear 2s infinite alternate changeBg;
+    @keyframes changeBg {
+      from {
+        background-color: #a4be7bb7;
+      }
+
+      to {
+        background-color: #a4be7be3;
+      }
+    }
+  }
+}
+
