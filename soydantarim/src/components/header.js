@@ -6,7 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { NavLink } from "react-router-dom";
 import "../sass/components/_header.scss";
-import logo from "../assets/logo.png";
+import logo from "../assets/newLogo.png";
 
 export default function Header() {
   return (
