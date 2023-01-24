@@ -58,38 +58,6 @@ export default function Gallery() {
                             />
                         </figure>
                     </li>
-                    {/* <li key="image-2">
-                        <figure>
-                            <img
-                                src={photo2}
-                                alt="Image 2"
-                            />
-                        </figure>
-                    </li> */}
-                    <li key="image-3">
-                        <figure>
-                            <img
-                                src={photo3}
-                                alt="Image 3"
-                            />
-                        </figure>
-                    </li>
-                    {/* <li key="image-4">
-                        <figure>
-                            <img
-                                src={photo4}
-                                alt="Image 4"
-                            />
-                        </figure>
-                    </li> */}
-                    {/* <li key="image-5">
-                        <figure>
-                            <img
-                                src={photo5}
-                                alt="Image 5"
-                            />
-                        </figure>
-                    </li> */}
                     <li key="image-6">
                         <figure>
                             <img
