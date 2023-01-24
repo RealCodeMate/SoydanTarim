@@ -12,7 +12,7 @@ const ProductList = ({ productData }) => {
                         key={index}
                         image={product.image}
                         name={product.name}
-                        price={product.current_price}
+                        info={product.info}
                     />
                 );
             })}

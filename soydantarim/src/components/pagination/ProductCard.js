@@ -2,7 +2,7 @@ import React from "react";
 
 import "../../sass/components/pagination/_productCard.scss"
 
-const ProductCard = ({ image, name }) => {
+const ProductCard = ({ image, name, info }) => {
     return (
         <div className='cardProduct'>
             <div className='cardProduct_image'>
@@ -10,7 +10,7 @@ const ProductCard = ({ image, name }) => {
             </div>
             <div className='cardProduct_info'>
                 <h2>{name}</h2>
-                <h3>Info</h3>
+                <h3>{info}</h3>
             </div>
         </div>
     );
