@@ -6,7 +6,7 @@ import Pagination from "../../components/pagination/Pagination";
 import "../../sass/pages/_productsA.scss";
 import fungisit from "../../utils/fungisit";
 
-const ProductA = () => {
+const Fungicides = () => {
   const [productData, setProductData] = useState(fungisit);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(8);
@@ -18,7 +18,7 @@ const ProductA = () => {
 
   return (
     <div className='productsA'>
-      <h1>İnsektisitler</h1>
+      <h1>Fungisitler</h1>
       <ProductList productData={currentPosts} />
       <Pagination
         totalPosts={productData.length}
@@ -30,4 +30,4 @@ const ProductA = () => {
   );
 };
 
-export default ProductA;
+export default Fungicides;
