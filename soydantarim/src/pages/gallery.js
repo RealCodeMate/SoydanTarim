@@ -1,3 +1,48 @@
+import photo1 from "../assets/photo1.jpeg";
+import photo2 from "../assets/photo2.jpeg";
+import photo3 from "../assets/photo3.jpeg";
+import photo4 from "../assets/photo4.jpeg";
+import photo5 from "../assets/photo5.jpeg";
+import photo6 from "../assets/photo6.jpeg";
+import photo7 from "../assets/photo7.jpeg";
+import photo8 from "../assets/photo8.jpeg";
+import photo9 from "../assets/photo9.jpeg";
+import photo10 from "../assets/photo10.jpeg";
+import photo11 from "../assets/photo11.jpeg";
+import photo12 from "../assets/photo12.jpeg";
+import photo13 from "../assets/photo13.jpeg";
+import photo14 from "../assets/photo14.jpeg";
+import photo15 from "../assets/photo15.jpeg";
+import photo16 from "../assets/photo16.jpeg";
+import photo17 from "../assets/photo17.jpeg";
+import photo18 from "../assets/photo18.jpeg";
+import photo19 from "../assets/photo19.jpeg";
+import photo20 from "../assets/photo20.jpeg";
+import photo21 from "../assets/photo21.jpeg";
+import photo22 from "../assets/photo22.jpeg";
+import photo23 from "../assets/photo23.jpeg";
+import photo24 from "../assets/photo24.jpeg";
+import photo25 from "../assets/photo25.jpeg";
+import photo26 from "../assets/photo26.jpeg";
+import photo27 from "../assets/photo27.jpeg";
+import photo28 from "../assets/photo28.jpeg";
+import photo29 from "../assets/photo29.jpeg";
+import photo30 from "../assets/photo30.jpeg";
+import photo31 from "../assets/photo31.jpeg";
+import photo32 from "../assets/photo32.jpeg";
+import photo33 from "../assets/photo33.jpeg";
+import photo34 from "../assets/photo34.jpeg";
+import photo35 from "../assets/photo35.jpeg";
+import photo36 from "../assets/photo36.jpeg";
+import photo37 from "../assets/photo37.jpeg";
+import photo38 from "../assets/photo38.jpeg";
+import photo39 from "../assets/photo39.jpeg";
+import photo40 from "../assets/photo40.jpeg";
+import photo41 from "../assets/photo41.jpeg";
+import photo42 from "../assets/photo42.jpeg";
+import photo43 from "../assets/photo43.jpeg";
+import photo44 from "../assets/photo44.jpeg";
+
 import "../sass/pages/_gallery.scss";
 export default function Gallery() {
     return (
@@ -8,48 +53,47 @@ export default function Gallery() {
                     <li key="image-1">
                         <figure>
                             <img
-                                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22944_hires.jpg"
+                                src={photo1}
                                 alt="Image 1"
                             />
                         </figure>
                     </li>
-                    <li key="image-2">
+                    {/* <li key="image-2">
                         <figure>
                             <img
-                                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23021_hires.jpg"
+                                src={photo2}
                                 alt="Image 2"
                             />
                         </figure>
-                    </li>
+                    </li> */}
                     <li key="image-3">
                         <figure>
                             <img
-                                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23004_hires.jpg"
+                                src={photo3}
                                 alt="Image 3"
                             />
                         </figure>
                     </li>
-                    <li key="image-4">
+                    {/* <li key="image-4">
                         <figure>
                             <img
-                                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA21212_hires.jpg"
+                                src={photo4}
                                 alt="Image 4"
                             />
                         </figure>
-                    </li>
-                    <li key="image-5">
+                    </li> */}
+                    {/* <li key="image-5">
                         <figure>
                             <img
-                                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22983_hires.jpg"
+                                src={photo5}
                                 alt="Image 5"
                             />
                         </figure>
-                    </li>
-
+                    </li> */}
                     <li key="image-6">
                         <figure>
                             <img
-                                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22906_hires.jpg"
+                                src={photo6}
                                 alt="Image 6"
                             />
                         </figure>
@@ -57,7 +101,7 @@ export default function Gallery() {
                     <li key="image-7">
                         <figure>
                             <img
-                                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22963_hires.jpg"
+                                src={photo7}
                                 alt="Image 7"
                             />
                         </figure>
@@ -65,7 +109,7 @@ export default function Gallery() {
                     <li key="image-8">
                         <figure>
                             <img
-                                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22918_hires.jpg"
+                                src={photo8}
                                 alt="Image 8"
                             />
                         </figure>
@@ -73,7 +117,7 @@ export default function Gallery() {
                     <li key="image-9">
                         <figure>
                             <img
-                                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22914_hires.jpg"
+                                src={photo9}
                                 alt="Image 9"
                             />
                         </figure>
@@ -81,8 +125,280 @@ export default function Gallery() {
                     <li key="image-10">
                         <figure>
                             <img
-                                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22937_hires.jpg"
+                                src={photo10}
                                 alt="Image 10"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-11">
+                        <figure>
+                            <img
+                                src={photo11}
+                                alt="Image 11"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-12">
+                        <figure>
+                            <img
+                                src={photo12}
+                                alt="Image 12"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-13">
+                        <figure>
+                            <img
+                                src={photo13}
+                                alt="Image 13"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-14">
+                        <figure>
+                            <img
+                                src={photo14}
+                                alt="Image 14"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-15">
+                        <figure>
+                            <img
+                                src={photo15}
+                                alt="Image 15"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-16">
+                        <figure>
+                            <img
+                                src={photo16}
+                                alt="Image 16"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-17">
+                        <figure>
+                            <img
+                                src={photo17}
+                                alt="Image 17"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-18">
+                        <figure>
+                            <img
+                                src={photo18}
+                                alt="Image 18"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-19">
+                        <figure>
+                            <img
+                                src={photo19}
+                                alt="Image 19"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-20">
+                        <figure>
+                            <img
+                                src={photo20}
+                                alt="Image 20"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-21">
+                        <figure>
+                            <img
+                                src={photo21}
+                                alt="Image 21"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-22">
+                        <figure>
+                            <img
+                                src={photo22}
+                                alt="Image 22"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-23">
+                        <figure>
+                            <img
+                                src={photo23}
+                                alt="Image 23"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-24">
+                        <figure>
+                            <img
+                                src={photo24}
+                                alt="Image 24"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-25">
+                        <figure>
+                            <img
+                                src={photo25}
+                                alt="Image 25"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-26">
+                        <figure>
+                            <img
+                                src={photo26}
+                                alt="Image 26"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-27">
+                        <figure>
+                            <img
+                                src={photo27}
+                                alt="Image 27"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-28">
+                        <figure>
+                            <img
+                                src={photo28}
+                                alt="Image 28"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-29">
+                        <figure>
+                            <img
+                                src={photo29}
+                                alt="Image 29"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-30">
+                        <figure>
+                            <img
+                                src={photo30}
+                                alt="Image 30"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-31">
+                        <figure>
+                            <img
+                                src={photo31}
+                                alt="Image 31"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-32">
+                        <figure>
+                            <img
+                                src={photo32}
+                                alt="Image 32"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-33">
+                        <figure>
+                            <img
+                                src={photo33}
+                                alt="Image 33"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-34">
+                        <figure>
+                            <img
+                                src={photo34}
+                                alt="Image 34"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-35">
+                        <figure>
+                            <img
+                                src={photo35}
+                                alt="Image 35"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-36">
+                        <figure>
+                            <img
+                                src={photo36}
+                                alt="Image 36"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-37">
+                        <figure>
+                            <img
+                                src={photo37}
+                                alt="Image 37"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-38">
+                        <figure>
+                            <img
+                                src={photo38}
+                                alt="Image 38"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-39">
+                        <figure>
+                            <img
+                                src={photo39}
+                                alt="Image 39"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-40">
+                        <figure>
+                            <img
+                                src={photo40}
+                                alt="Image 40"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-41">
+                        <figure>
+                            <img
+                                src={photo41}
+                                alt="Image 41"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-42">
+                        <figure>
+                            <img
+                                src={photo42}
+                                alt="Image 42"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-43">
+                        <figure>
+                            <img
+                                src={photo43}
+                                alt="Image 43"
+                            />
+                        </figure>
+                    </li>
+                    <li key="image-44">
+                        <figure>
+                            <img
+                                src={photo44}
+                                alt="Image 44"
                             />
                         </figure>
                     </li>
