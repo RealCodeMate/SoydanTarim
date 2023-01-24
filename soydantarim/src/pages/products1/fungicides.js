@@ -4,10 +4,10 @@ import ProductList from "../../components/pagination/ProductList";
 import Pagination from "../../components/pagination/Pagination";
 
 import "../../sass/pages/_productsA.scss";
-import fungisit from "../../utils/fungisit";
+import fungicidesList from "../../utils/fungicidesList";
 
 const Fungicides = () => {
-  const [productData, setProductData] = useState(fungisit);
+  const [productData, setProductData] = useState(fungicidesList);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(8);
 

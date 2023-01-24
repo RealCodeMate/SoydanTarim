@@ -1,4 +1,4 @@
-const fungisit = [
+const fungicidesList = [
     {
         "id": "ilac1",
         "name": "Alfosetil",
@@ -30,12 +30,6 @@ const fungisit = [
         "info": "100EC 100CC"
     },
     {
-        "id": "ilac6",
-        "name": "Ridozeb 72",
-        "image": "https://i.picsum.photos/id/696/200/200.jpg?hmac=JE4lFckorKxM41-eM1nTxXjpOeCf3aZkAxrLl3ZAYI0",
-        "info": "250 GR"
-    },
-    {
         "id": "ilac7",
         "name": "Pesos",
         "image": "https://i.picsum.photos/id/478/200/200.jpg?hmac=YfKBYcZHT991lmrKfB0pYNaztmUvQecXbVrc5V4mj8E",
@@ -53,12 +47,7 @@ const fungisit = [
         "image": "https://i.picsum.photos/id/906/200/200.jpg?hmac=jQ-m5xgglMRMPvZhK3539qEkxPG1FVUae6AeV_HKQfg",
         "info": "800 Gr"
     },
-    {
-        "id": "ilac10",
-        "name": "Dikozin M-45",
-        "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
-        "info": "800 Gr"
-    },
+    
     {
         "id": "ilac11",
         "name": "Pesos",
@@ -72,12 +61,6 @@ const fungisit = [
         "info": "250 CC"
     },
     {
-        "id": "ilac13",
-        "name": "Ridozeb 72",
-        "image": "https://i.picsum.photos/id/906/200/200.jpg?hmac=jQ-m5xgglMRMPvZhK3539qEkxPG1FVUae6AeV_HKQfg",
-        "info": "1 Kg"
-    },
-    {
         "id": "ilac14",
         "name": "Teldor",
         "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
@@ -88,12 +71,6 @@ const fungisit = [
         "name": "Hagax",
         "image": "https://i.picsum.photos/id/906/200/200.jpg?hmac=jQ-m5xgglMRMPvZhK3539qEkxPG1FVUae6AeV_HKQfg",
         "info": "2.5 Kg"
-    },
-    {
-        "id": "ilac16",
-        "name": "Aliette",
-        "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
-        "info": "1 Kg"
     },
     {
         "id": "ilac17",
@@ -119,12 +96,7 @@ const fungisit = [
         "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
         "info": "800 Gr"
     },
-    {
-        "id": "ilac21",
-        "name": "Pomarsol Forte",
-        "image": "https://i.picsum.photos/id/906/200/200.jpg?hmac=jQ-m5xgglMRMPvZhK3539qEkxPG1FVUae6AeV_HKQfg",
-        "info": "400 Gr"
-    },
+    
     {
         "id": "ilac22",
         "name": "Blue Bordo Disp.",
@@ -150,22 +122,10 @@ const fungisit = [
         "info": "250 CC"
     },
     {
-        "id": "ilac26",
-        "name": "Trooper 25WP",
-        "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
-        "info": "1 Kg"
-    },
-    {
         "id": "ilac27",
         "name": "Flint WG 50",
         "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
         "info": "150 Gr"
-    },
-    {
-        "id": "ilac28",
-        "name": "Antrocol Combi",
-        "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
-        "info": "800 Gr"
     },
     {
         "id": "ilac29",
@@ -184,12 +144,6 @@ const fungisit = [
         "name": "Sumitop WP",
         "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
         "info": "400 Gr"
-    },
-    {
-        "id": "ilac32",
-        "name": "Dikotan M-45",
-        "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
-        "info": "800 Gr"
     },
     {
         "id": "ilac33",
@@ -239,32 +193,10 @@ const fungisit = [
         "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
         "info": "1 Kg"
     },
-    {
-        "id": "ilac41",
-        "name": "Bayfidan",
-        "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
-        "info": "1 Lt"
-    },
-    {
-        "id": "ilac42",
-        "name": "Pomarsol Forte",
-        "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
-        "info": "400 Gr"
-    },
-    {
-        "id": "ilac43",
-        "name": "Propicol Combi",
-        "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
-        "info": "800 Gr"
-    },
-    {
-        "id": "ilac44",
-        "name": "Hektiram Forte",
-        "image": "https://i.picsum.photos/id/2/200/200.jpg?hmac=isSWZUpv7D1D156XcADPOCZlfCG9mmvb8OlXFdvLdK0",
-        "info": "800 Gr"
-    },
+    
+    
     
 
 ]
 
-export default fungisit;
+export default fungicidesList;
