@@ -3,129 +3,132 @@
 
 .landingPage {
   height: 100vh;
-  max-width: 97vw;
-  margin: auto;
+  position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 0;
 
-  .containerBlurHome {
-    position: relative;
-    width: 100%;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
-    line-height: 30vw;
-    text-align: center;
-    background-color: #ffffff;
+    width: 100%;
+    background-color: #000;
+    opacity: .5;
+    z-index: 100;
   }
 
-  .containerLandingPage {
-    height: 100%;
-    width: 100%;
+  &__container {
+    position: absolute;
+    color: #fff;
+    height: 50%;
+    max-width: 50%;
+    margin: auto;
+    z-index: 1000;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    color: #000;
+    align-items: center;
+    text-align: center;
 
-    &_left {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
+    h2 {
+      font-size: 6.2rem;
+      color: $color-secondary-dark;
+      // color: $color-white;
 
-      &_img {
-        height: 100%;
-        width: 100%;
-
-        video {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-
-        // background: url("../../assets/tree3.jpg") center center/cover no-repeat;
+      span {
+        color: $color-secondary-light;
+        // color: $color-white;
       }
     }
 
-    &_right {
+    h5 {
+      font-size: 2.6rem;
+      padding: 2rem 6rem;
+      color: $color-white;
+    }
+
+    a {
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      padding: 10px 80px;
+      color: #fff;
+      background-color: $color-secondary-light;
+      border-radius: 50px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .btn {
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn:hover {
+      box-shadow: 1px 1px 25px 10px $color-primary;
+    }
+
+    .btn:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
       width: 100%;
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      line-height: normal;
-      position: relative;
-      z-index: 1;
-
-      &::before {
-        content: "";
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: #f1c8121e;
-        z-index: -1;
-      }
-
-      h2 {
-        font-size: 6.2rem;
-        color: $color-secondary-dark;
-
-        span {
-          color: $color-secondary-light;
-        }
-      }
-
-      h5 {
-        font-size: 2.6rem;
-        padding: 2rem 6rem;
-        color: $color-primary;
-      }
-
-      a {
-        font-size: 1.3rem;
-        letter-spacing: 2px;
-        padding: 10px 80px;
-        color: #fff;
-        background-color: $color-secondary-light;
-        border-radius: 50px;
-        cursor: pointer;
-        text-transform: uppercase;
-      }
-
-      .btn {
-        text-decoration: none;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .btn:hover {
-        box-shadow: 1px 1px 25px 10px $color-primary;
-      }
-
-      .btn:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-          120deg,
+      background: linear-gradient(120deg,
           transparent,
           $color-primary,
-          transparent
-        );
-        transition: all 750ms;
-      }
-
-      .btn:hover:before {
-        left: 100%;
-      }
+          transparent);
+      transition: all 750ms;
     }
+
+    .btn:hover:before {
+      left: 100%;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 20;
+
+    h1 {
+      font-size: 100px;
+      color: $color-white;
+    }
+
+    p {
+      color: $color-white;
+      margin-bottom: 3rem;
+    }
+
+  }
+
+
+  &__button {
+    color: $color-white;
+    padding: 1rem 3rem;
+    background-color: transparent;
+    border: 5px solid $color-secondary-light;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    &__wrapper {
+      width: 100%;
+    }
+  }
+
+  &__button:hover {
+    background-color: $color-secondary-light;
+    color: $color-black;
   }
 }
 
@@ -190,6 +193,7 @@
   background: url("../../assets/landingImg.jpg") center center/cover no-repeat;
   color: #fff;
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
@@ -230,12 +234,10 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      120deg,
-      transparent,
-      $color-primary,
-      transparent
-    );
+    background: linear-gradient(120deg,
+        transparent,
+        $color-primary,
+        transparent);
     transition: all 750ms;
   }
 
@@ -354,6 +356,7 @@
     }
   }
 }
+
 .card-hover {
   $root: &;
   width: 100%;
@@ -422,6 +425,7 @@
   &__title {
     font-size: 1.5rem;
     margin-bottom: 1em;
+
     span {
       color: #2d7f0b;
     }

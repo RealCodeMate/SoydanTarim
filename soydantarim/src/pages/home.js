@@ -16,34 +16,27 @@ import icon1 from "../assets/icon1.png";
 import icon2 from "../assets/icon2.png";
 import icon3 from "../assets/icon3.png";
 import icon4 from "../assets/icon4.png";
+import LandingCarousel from "../components/landingCarousel";
 
 export default function Home() {
   return (
     <div>
       <div className="landingPage">
-        <div className="containerBlurHome">
-          <div className="containerLandingPage">
-            <div className="containerLandingPage_left">
-              <div className="containerLandingPage_left_img">
-                <video loop autoplay="" muted>
-                  <source src={wheat} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-            <div className="containerLandingPage_right ">
-              <h2>
-                <span>Soydan</span> Tarım
-              </h2>
-              <h5>
-                Zirai ilaç, gübre, tohum, fide ve tarım aletleri, Mersin'in en
-                iyisi.
-              </h5>
-              <a className="btn">Keşfet</a>
-            </div>
-          </div>
+        <div className="landingPage__container">
+          <h2>
+            <span>Soydan</span> Tarım
+          </h2>
+          <h5>
+            Zirai ilaç, gübre, tohum, fide ve tarım aletleri, Mersin'in en
+            iyisi.
+          </h5>
+          <a className="btn">Keşfet</a>
+        </div>
+        <div className="landingPage__content">
+
+          <LandingCarousel />
         </div>
       </div>
-
       <div className="section2">
         <div className="landingImages">
           <img src={image} className="img1" />
