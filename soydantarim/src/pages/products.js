@@ -37,7 +37,7 @@ export default function Products() {
               <p>
                Böcek ve haşerelere karşı olan etkili mücadele için...
               </p>
-              <a href="#">Daha Fazlası</a>
+              <Link to="/ürünler/insektisitler">Daha Fazlası</Link>
             </div>
           </div>
         </div>

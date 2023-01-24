@@ -4,7 +4,7 @@ import './App.css';
 import Home from './pages/home';
 import Products from './pages/products';
 import Fungicides from './pages/products1/fungicides';
-import ProductB from './pages/products1/productB';
+import Insecticides from "./pages/products1/insecticides";
 import ProductC from './pages/products1/productC';
 import ProductD from './pages/products1/productD';
 import ProductE from './pages/products1/productE';
@@ -24,7 +24,7 @@ function App() {
         <Route element={<Home />} path="/" />
         <Route element={<Products />} path="/ürünler" />
         <Route element={<Fungicides />} path="/ürünler/fungisitler" />
-        <Route element={<ProductB />} path="/ürünler/productB" />
+        <Route element={<Insecticides />} path="/ürünler/insektisitler" />
         <Route element={<ProductC />} path="/ürünler/productC" />
         <Route element={<ProductD />} path="/ürünler/productD" />
         <Route element={<ProductE />} path="/ürünler/productE" />
