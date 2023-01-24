@@ -9,55 +9,51 @@ import p6 from "../assets/6.jpg";
 import { Link } from "react-router-dom";
 
 export default function Products() {
-  function productDetail() {}
   return (
     <div>
       <div className="product">
         <div className="containerHeader">
-          <h2><span>Ürün</span>lerimiz</h2>
+          <h2><span>Zirai </span>İlaçlar</h2>
         </div>
       </div>
-        <div className="containerCard">
-          <div className="card" >
-            <div className="content">
-              
-              <div className="content__text">
-                <h3>Designing</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Sapiente, dolor.
-                </p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div className="card" >
-            <div className="content">
-              
-              <div className="content__text">
-                <h3>Development</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Libero, aperiam!
-                </p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="content">
-              
-              <div className="content__text">
-                <h3>Maintenance</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Reprehenderit, itaque!
-                </p>
-                <a href="#">Read More</a>
-              </div>
+      <div className="containerCard">
+        <div className="card" >
+          <div className="content">
+
+            <div className="content__text">
+              <h3>Fungisitler</h3>
+              <p>
+                Mantar kaynaklı bitki hastalıklarının tedavisi için...
+              </p>
+              <Link to="/ürünler/fungisitler">Daha Fazlası</Link>
             </div>
           </div>
         </div>
+        <div className="card" >
+          <div className="content">
+
+            <div className="content__text">
+              <h3>İnsektisitler</h3>
+              <p>
+               Böcek ve haşerelere karşı olan etkili mücadele için...
+              </p>
+              <a href="#">Daha Fazlası</a>
+            </div>
+          </div>
+        </div>
+        <div className="card">
+          <div className="content">
+
+            <div className="content__text">
+              <h3>Akarisitler</h3>
+              <p>
+               Akarlar, kırmızı örümcekler ve kene ile mücadele için...
+              </p>
+              <a href="#">Daha Fazlası</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './pages/home';
 import Products from './pages/products';
-import ProductA from './pages/products1/productA';
+import Fungicides from './pages/products1/fungicides';
 import ProductB from './pages/products1/productB';
 import ProductC from './pages/products1/productC';
 import ProductD from './pages/products1/productD';
@@ -23,7 +23,7 @@ function App() {
       <Routes>
         <Route element={<Home />} path="/" />
         <Route element={<Products />} path="/ürünler" />
-        <Route element={<ProductA />} path="/ürünler/productA" />
+        <Route element={<Fungicides />} path="/ürünler/fungisitler" />
         <Route element={<ProductB />} path="/ürünler/productB" />
         <Route element={<ProductC />} path="/ürünler/productC" />
         <Route element={<ProductD />} path="/ürünler/productD" />

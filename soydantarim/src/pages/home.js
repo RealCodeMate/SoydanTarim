@@ -158,7 +158,7 @@ export default function Home() {
                 <p class="card-hover__text">
                   Akasit, Defoliant, Fumigant ve daha fazlası.
                 </p>
-                <Link to="/ürünler" className="card-hover__link">
+                <Link to="/ürünler/fungisitler" className="card-hover__link">
                   <span>Keşfet</span>
                   <svg
                     fill="none"
@@ -185,7 +185,7 @@ export default function Home() {
                 <p class="card-hover__text">
                   Ahır Gübresi, Kompostlar, Yeşil Gübreler ve daha fazlası.
                 </p>
-                <Link to="/ürünler/productA" className="card-hover__link">
+                <Link to="/ürünler/fungisitler" className="card-hover__link">
                   <span>Keşfet</span>
                   <svg
                     fill="none"
@@ -212,7 +212,7 @@ export default function Home() {
                 <p class="card-hover__text">
                   Domates, Biber, Karpuz ve daha fazlası.
                 </p>
-                <Link to="/ürünler/productA" className="card-hover__link">
+                <Link to="/ürünler/fungisitler" className="card-hover__link">
                   <span>Keşfet</span>
                   <svg
                     fill="none"
@@ -239,7 +239,7 @@ export default function Home() {
                 <p class="card-hover__text">
                   Aşılı Fide, Marul Fidesi, Domates Fidesi ve daha fazlası
                 </p>
-                <Link to="/ürünler/productA" className="card-hover__link">
+                <Link to="/ürünler/fungisitler" className="card-hover__link">
                   <span>Keşfet</span>
                   <svg
                     fill="none"
@@ -266,7 +266,7 @@ export default function Home() {
                 <p class="card-hover__text">
                   Kültivatör, Saban, Fıskiye ve daha fazlası.
                 </p>
-                <Link to="/ürünler/productA" className="card-hover__link">
+                <Link to="/ürünler/fungisitler" className="card-hover__link">
                   <span>Keşfet</span>
                   <svg
                     fill="none"
@@ -291,7 +291,7 @@ export default function Home() {
                   Zeytin<span>yağı</span>
                 </h3>
                 <p class="card-hover__text">Organik Zeytinyağı</p>
-                <Link to="/ürünler/productA" className="card-hover__link">
+                <Link to="/ürünler/fungisitler" className="card-hover__link">
                   <span>Keşfet</span>
                   <svg
                     fill="none"
