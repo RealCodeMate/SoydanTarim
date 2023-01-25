@@ -35,7 +35,7 @@ export default function Products() {
             <div className="content__text">
               <h3>İnsektisitler</h3>
               <p>
-               Böcek ve haşerelere karşı olan etkili mücadele için...
+                Böcek ve haşerelere karşı olan etkili mücadele için...
               </p>
               <Link to="/ürünler/insektisitler">Daha Fazlası</Link>
             </div>
@@ -47,9 +47,21 @@ export default function Products() {
             <div className="content__text">
               <h3>Akarisitler</h3>
               <p>
-               Akarlar, kırmızı örümcekler ve kene ile mücadele için...
+                Akarlar, kırmızı örümcekler ve kene ile mücadele için...
               </p>
               <Link to="/ürünler/akarisitler">Daha Fazlası</Link>
+            </div>
+          </div>
+        </div>
+        <div className="card">
+          <div className="content">
+
+            <div className="content__text">
+              <h3>Pestisitler</h3>
+              <p>
+              Bakteri, virüs ve haşerelerin zararlı etkileri ile mücadele için...
+              </p>
+              <Link to="/ürünler/haşare-ilaçları">Daha Fazlası</Link>
             </div>
           </div>
         </div>
