@@ -32,13 +32,15 @@ export default function Header() {
                 <h5>Anasayfa</h5>
               </Nav.Link>
               <NavDropdown title="Ürünler" id="basic-nav-dropdown" >
-                <NavDropdown.Item as={NavLink} to="/ürünler">Zirai İlaç</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/ürünler">Zirai İlaçlar</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={NavLink} to="/ürünler/gübreler">Gübre</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/ürünler/haşare-ilaçları">Haşare İlaçları</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={NavLink} to="/ürünler/tohumlar">Tohum</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/ürünler/gübreler">Gübreler</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={NavLink} to="/ürünler/fideler">Fide</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/ürünler/tohumlar">Tohumlar</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item as={NavLink} to="/ürünler/fideler">Fideler</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={NavLink} to="/ürünler">Tarım Aletleri</NavDropdown.Item>
               </NavDropdown>
