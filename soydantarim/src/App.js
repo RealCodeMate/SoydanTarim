@@ -16,6 +16,7 @@ import Footer from "./components/footer";
 import Contact from "./pages/contact";
 import About from "./pages/about";
 import Gallery from "./pages/gallery";
+import FarmEquipment from "./pages/products1/farmEquipment";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route element={<Pesticides />} path="/ürünler/haşare-ilaçları" />
         <Route element={<Seeds />} path="/ürünler/tohumlar" />
         <Route element={<Seedlings />} path="/ürünler/fideler" />
+        <Route element={<FarmEquipment />} path="/ürünler/tarım-aletleri" />
         <Route element={<Contact />} path="/iletişim" />
         <Route element={<About />} path="/hakkımızda" />
         <Route element={<Gallery />} path="/galeri" />

@@ -42,7 +42,7 @@ export default function Header() {
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={NavLink} to="/ürünler/fideler">Fideler</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={NavLink} to="/ürünler">Tarım Aletleri</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/ürünler/tarım-aletleri">Tarım Aletleri</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={NavLink} to="/galeri">
                 <h5>Galeri</h5>
