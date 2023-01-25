@@ -7,7 +7,7 @@ import Fungicides from './pages/products1/fungicides';
 import Insecticides from "./pages/products1/insecticides";
 import Fertilizers from './pages/products1/fertilizers';
 import Acaricides from './pages/products1/acaricides';
-import ProductE from './pages/products1/productE';
+import Seeds from "./pages/products1/seeds";
 import ProductF from './pages/products1/productF';
 import Header from './components/header';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,9 +25,9 @@ function App() {
         <Route element={<Products />} path="/ürünler" />
         <Route element={<Fungicides />} path="/ürünler/fungisitler" />
         <Route element={<Insecticides />} path="/ürünler/insektisitler" />
-        <Route element={<Fertilizers />} path="/ürünler/gübreler" />
         <Route element={<Acaricides />} path="/ürünler/akarisitler" />
-        <Route element={<ProductE />} path="/ürünler/productE" />
+        <Route element={<Fertilizers />} path="/ürünler/gübreler" />
+        <Route element={<Seeds />} path="/ürünler/tohumlar" />
         <Route element={<ProductF />} path="/ürünler/productF" />
         <Route element={<Contact />} path="/iletişim" />
         <Route element={<About />} path="/hakkımızda" />

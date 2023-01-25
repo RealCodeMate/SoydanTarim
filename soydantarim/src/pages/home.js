@@ -212,7 +212,7 @@ export default function Home() {
                 <p class="card-hover__text">
                   Domates, Biber, Karpuz ve daha fazlası.
                 </p>
-                <Link to="/ürünler/fungisitler" className="card-hover__link">
+                <Link to="/ürünler/tohumlar" className="card-hover__link">
                   <span>Keşfet</span>
                   <svg
                     fill="none"
