@@ -34,7 +34,7 @@ export default function Header() {
               <NavDropdown title="Ürünler" id="basic-nav-dropdown" >
                 <NavDropdown.Item as={NavLink} to="/ürünler">Zirai İlaç</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={NavLink} to="/ürünler">Gübre</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/ürünler/gübreler">Gübre</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={NavLink} to="/ürünler">Tohum</NavDropdown.Item>
                 <NavDropdown.Divider />

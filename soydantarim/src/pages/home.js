@@ -185,7 +185,7 @@ export default function Home() {
                 <p class="card-hover__text">
                   Ahır Gübresi, Kompostlar, Yeşil Gübreler ve daha fazlası.
                 </p>
-                <Link to="/ürünler/fungisitler" className="card-hover__link">
+                <Link to="/ürünler/gübreler" className="card-hover__link">
                   <span>Keşfet</span>
                   <svg
                     fill="none"
