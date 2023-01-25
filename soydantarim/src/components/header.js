@@ -38,7 +38,7 @@ export default function Header() {
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={NavLink} to="/ürünler/tohumlar">Tohum</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={NavLink} to="/ürünler">Fide</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/ürünler/fideler">Fide</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={NavLink} to="/ürünler">Tarım Aletleri</NavDropdown.Item>
               </NavDropdown>

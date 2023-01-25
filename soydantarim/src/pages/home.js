@@ -239,7 +239,7 @@ export default function Home() {
                 <p class="card-hover__text">
                   Aşılı Fide, Marul Fidesi, Domates Fidesi ve daha fazlası
                 </p>
-                <Link to="/ürünler/fungisitler" className="card-hover__link">
+                <Link to="/ürünler/fideler" className="card-hover__link">
                   <span>Keşfet</span>
                   <svg
                     fill="none"
