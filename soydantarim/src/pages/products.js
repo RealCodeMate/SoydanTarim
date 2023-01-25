@@ -49,7 +49,7 @@ export default function Products() {
               <p>
                Akarlar, kırmızı örümcekler ve kene ile mücadele için...
               </p>
-              <a href="#">Daha Fazlası</a>
+              <Link to="/ürünler/akarisitler">Daha Fazlası</Link>
             </div>
           </div>
         </div>
