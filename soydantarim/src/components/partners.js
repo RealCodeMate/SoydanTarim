@@ -1,7 +1,7 @@
 import '../sass/components/_partners.scss';
 import hektasLogo from "../assets/partnersLogo/hektasLogo.png";
 import bayerLogo from "../assets/partnersLogo/bayerLogo.png";
-import dogatechLogo from "../assets/partnersLogo/dogatechLogo2.png";
+import dogatechLogo from "../assets/partnersLogo/dogatechLogo.png";
 import akcLogo from "../assets/partnersLogo/akcLogo.png";
 import biolchimLogo from "../assets/partnersLogo/biolchimLogo.png";
 import octaviusLogo from "../assets/partnersLogo/octaviusLogo.png";

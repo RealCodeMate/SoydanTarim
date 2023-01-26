@@ -3,7 +3,6 @@ import CommentCarousel from "../components/carousel";
 import image from "../assets/mission.jpg";
 import wheat from "../assets/wheat.mp4";
 import "../sass/pages/_home.scss";
-import logo from "../assets/logo.png";
 import Partners from "../components/partners";
 import { Link } from "react-router-dom";
 import p1 from "../assets/1.jpg";
