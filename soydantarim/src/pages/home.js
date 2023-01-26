@@ -1,20 +1,19 @@
 import react from "react";
 import CommentCarousel from "../components/carousel";
-import image from "../assets/mission.jpg";
-import wheat from "../assets/wheat.mp4";
+import image from "../assets/backgrounds/mission.jpg";
 import "../sass/pages/_home.scss";
 import Partners from "../components/partners";
 import { Link } from "react-router-dom";
-import p1 from "../assets/1.jpg";
-import p2 from "../assets/2.jpg";
-import p3 from "../assets/3.jpg";
-import p4 from "../assets/4.jpg";
-import p5 from "../assets/5.jpg";
-import p6 from "../assets/6.jpg";
-import icon1 from "../assets/icon1.png";
-import icon2 from "../assets/icon2.png";
-import icon3 from "../assets/icon3.png";
-import icon4 from "../assets/icon4.png";
+import p1 from "../assets/homeProductsImg/1.jpg";
+import p2 from "../assets/homeProductsImg/2.jpg";
+import p3 from "../assets/homeProductsImg/3.jpg";
+import p4 from "../assets/homeProductsImg/4.jpg";
+import p5 from "../assets/homeProductsImg/5.jpg";
+import p6 from "../assets/homeProductsImg/6.jpg";
+import icon1 from "../assets/icons/icon1.png";
+import icon2 from "../assets/icons/icon2.png";
+import icon3 from "../assets/icons/icon3.png";
+import icon4 from "../assets/icons/icon4.png";
 import LandingCarousel from "../components/landingCarousel";
 
 export default function Home() {

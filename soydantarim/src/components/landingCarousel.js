@@ -1,6 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
 import '../sass/components/_landingCarousel.scss';
-import profileIcon from '../assets/landingImg.jpg'
 
 export default function LandingCarousel() {
     return (

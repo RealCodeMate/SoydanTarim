@@ -1,7 +1,7 @@
 import "../sass/pages/_about.scss";
-import image from '../assets/about.jpeg'
-import mission from '../assets/mission.jpg'
-import vision from '../assets/vision.jpg'
+import image from '../assets/backgrounds/about.jpeg'
+import mission from '../assets/backgrounds/mission.jpg'
+import vision from '../assets/backgrounds/vision.jpg'
 
 export default function About() {
     return (

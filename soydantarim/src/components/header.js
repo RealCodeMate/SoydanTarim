@@ -6,14 +6,14 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { NavLink } from "react-router-dom";
 import "../sass/components/_header.scss";
-import logo from "../assets/newLogo.png";
+import soydanTarimLogo from "../assets/soydanTarimLogo.png";
 
 export default function Header() {
   return (
     <Navbar key="lg" expand="lg">
       <Container fluid>
         <Navbar.Brand as={NavLink} to="/">
-          <img src={logo} />
+          <img src={soydanTarimLogo}  alt="soydanTarim_logo"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
         <Navbar.Offcanvas
