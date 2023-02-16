@@ -1,13 +1,22 @@
+@import "../abstracts/mediaquery";
+
 main.gallery {
   padding: 2rem;
+  @include respond(phone) {
+    padding: .5rem;
+    text-align: center;
+  }
 }
 
 .gallery>h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: #333333;
-  font-weight: 100;
-  
+  font-weight: 200;
+  @include respond(phone) {
+    font-size: 1.8rem;
+    font-weight: 200;
+  }
 }
 
 .gallery>ul>li {
@@ -22,6 +31,15 @@ main.gallery {
   grid-gap: 1rem;
   grid-auto-flow: dense;
   padding-left: 0;
+
+  @include respond(phone) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, 250px);
+  }
+  @include respond(smallphone) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(1, 250px);
+  }
 }
 
 .gallery>.gallery__list>li>figure {
@@ -34,6 +52,8 @@ main.gallery {
   object-fit: cover;
   cursor: pointer;
   transition: all .5s ease;
+
+
 
   &:hover{
     transform: scale(1.1);

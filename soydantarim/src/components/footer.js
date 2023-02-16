@@ -11,7 +11,7 @@ export default function Footer() {
       behavior: 'smooth',
     });
   }
-  
+
   return (
     <div>
       <footer className="footer">
@@ -78,7 +78,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p>Copyright © 3rd Wave 2022. All rights reserved.</p>
+        <p className="footer__copyright">Copyright © 3rd Wave 2022. All rights reserved.</p>
         <div className='scrollTop'>
           <div class="arrow" onClick={handleScrollToTop}>
             <span></span>

@@ -9,7 +9,7 @@
     max-width: 95%;
     margin: auto;
     -webkit-filter: blur(60px);
-    -webkit-animation: 5s linear 2s infinite alternate changeBg;
+    -webkit-animation: 5s linear infinite alternate changeBg;
     @keyframes changeBg {
       from {
         background-color: #a4be7bb7;
@@ -33,8 +33,8 @@
     max-width: 100%;
     margin: auto;
     -webkit-filter: blur(50px);
-    -webkit-animation: 5s linear 2s infinite alternate changeBg;
-    @keyframes changeBg {
+    -webkit-animation: 5s linear infinite alternate changeBg2;
+    @keyframes changeBg2 {
       from {
         background-color: #a4be7bb7;
       }

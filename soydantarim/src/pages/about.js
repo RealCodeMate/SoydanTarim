@@ -39,7 +39,7 @@ export default function About() {
                         <h1>Misyonumuz</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <img src={mission} className="img__mission" />
+                        <img src={mission} className="img__mission" />
                 </div>
                 <div className="about__bottom--vision">
                     <img src={vision} className="img__vision" />

@@ -1,4 +1,5 @@
-@import "../abstracts//variables";
+@import "../abstracts/variables";
+@import "../abstracts/mediaquery";
 
 .containerFooter {
   max-width: 60vw;
@@ -25,6 +26,10 @@ ul {
   position: relative;
   z-index: 1;
 
+  &__copyright{
+    font-weight: 900;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -35,6 +40,16 @@ ul {
     background: url("../../assets/backgrounds/wheat.png") top -40px center/cover no-repeat;
     opacity: 0.2;
     z-index: -1;
+
+    @include respond(tab-port) {
+      height: 100%;
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   p {
@@ -46,6 +61,12 @@ ul {
 
 .footer-col {
   width: 25%;
+
+  @include respond(phone) {
+    width: 50%;
+    padding: 0 25px;
+  }
+
   padding: 0 15px;
 }
 
@@ -54,7 +75,7 @@ ul {
   color: #ffffff;
   text-transform: capitalize;
   margin-bottom: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
 }
 
@@ -78,7 +99,7 @@ ul {
   text-transform: capitalize;
   color: #ffffff !important;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 500;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -126,16 +147,28 @@ ul {
   display: block;
   width: 1vw;
   height: 1vw;
-  border-bottom: 7px solid white;
-  border-right: 7px solid white;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
   transform: rotate(90deg);
   animation: animate 2s infinite;
+
+  @include respond(phone) {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+  }
 }
 
 .arrow span:nth-child(2) {
   animation-delay: -0.2s;
-  border-bottom: 7px solid rgb(135, 15, 15);
-  border-right: 7px solid rgb(135, 15, 15);
+  border-bottom: 2px solid rgb(135, 15, 15);
+  border-right: 2px solid rgb(135, 15, 15);
+
+  @include respond(phone) {
+    border-bottom: 2px solid rgb(135, 15, 15);
+    border-right: 2px solid rgb(135, 15, 15);
+  }
 }
 
 .arrow span:nth-child(3) {

@@ -1,51 +1,100 @@
+@import "../abstracts/mediaquery";
+
 .partners {
   text-align: center;
   padding: 2rem;
   color: #fff;
   margin-bottom: 4rem;
 
-  .logo{
+  .logo {
     position: relative;
-    --color: #ffea20;
-    z-index: 1;
+    // --color: #ffea20;
+    // z-index: 1;
 
-    &::before {
-      content: "";
-      position: absolute;
-      inset: -10px 50px;
-      border-top: 4px solid var(--color);
-      border-bottom: 4px solid var(--color);
-      transform: skewY(-25deg);
-      transition: 0.9s ease-in-out;
-      z-index: 0;
-      visibility: hidden;
-    }
-  
-    &:hover::before {
-      inset: -30px 40px;
-      transform: skewY(0deg);
-      visibility: visible;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   inset: -10px 50px;
+    //   border-top: 4px solid var(--color);
+    //   border-bottom: 4px solid var(--color);
+    //   transform: skewY(-25deg);
+    //   transition: 0.9s ease-in-out;
+    //   z-index: 0;
+    //   visibility: hidden;
+    // }
+
+    // &:hover::before {
+    //   inset: -30px 40px;
+    //   transform: skewY(0deg);
+    //   visibility: visible;
+    // }
   }
-  
+
   h1 {
     margin-bottom: 2rem;
+    font-size: 3rem;
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
   }
+
   &__company {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     padding-top: 3rem;
+
+    @include respond(desktop) {
+      gap: 4rem;
+      padding-top: 1.5rem;
+    }
+
+    @include respond(tab-land) {
+      gap: 4rem;
+      padding-top: 1.5rem;
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 4rem;
+      padding-top: 1.5rem;
+    }
+
+
+    @include respond(phone) {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 3rem;
+      padding-top: 1.5rem;
+    }
+
     .companyImg {
       width: 10rem;
       height: 10rem;
       filter: grayscale(100%);
       transition: all 1s;
+
+      @include respond(tab-land) {
+        width: 9rem;
+        height: 9rem;
+      }
+
+      @include respond(tab-port) {
+        width: 7rem;
+        height: 7rem;
+      }
+
+      @include respond(phone) {
+        width: 8rem;
+        height: 8rem;
+      }
     }
+
     .companyImg:hover {
       filter: grayscale(0);
       transform: scale(1.3);
     }
+
   }
 }

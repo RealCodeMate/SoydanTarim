@@ -22,13 +22,13 @@ export default function Home() {
       <div className="landingPage">
         <div className="landingPage__container">
           <h2>
-            <span>Soydan</span> Tarım
+            Soydan Tarım
           </h2>
           <h5>
             Zirai ilaç, gübre, tohum, fide ve tarım aletleri, Mersin'in en
             iyisi.
           </h5>
-          <a className="btn">Keşfet</a>
+          <a>Keşfet</a>
         </div>
         <div className="landingPage__content">
 

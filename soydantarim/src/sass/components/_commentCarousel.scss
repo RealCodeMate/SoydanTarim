@@ -1,13 +1,23 @@
+@import "../abstracts/mediaquery";
+
 .container-carousel {
   z-index: 0;
   margin-top: 2rem;
 }
 
 .d-block {
-  height: 25rem;
+  height: 20rem;
   width: 70%;
   margin: auto;
   cursor: pointer;
+
+  @include respond(tab-port) {
+    height: 23rem;
+  }
+
+  @include respond(phone) {
+    height: 23rem;
+  }
 }
 
 .comment {
@@ -21,6 +31,7 @@
   border-radius: 2rem;
   box-shadow: rgb(240, 240, 240) -30px -30px 30px -10px inset,
     rgb(255, 255, 255) 30px 30px 30px -18px inset;
+
   &__container {
     height: 70%;
     width: 80%;
@@ -32,6 +43,7 @@
       display: flex;
       flex-direction: row;
       margin-bottom: 2rem;
+
       .profileIcon {
         width: 5rem;
         height: 5rem;

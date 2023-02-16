@@ -1,12 +1,24 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
+@import "../abstracts/mediaquery";
 
 .containerHeader {
   h2 {
     font-size: 4rem;
+    margin-bottom: 3rem;
     text-align: center;
-    margin-bottom: 5rem;
     color: #004109;
+
+    @include respond(tab-land) {
+      font-size: 3rem;
+    }
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+    }
+    @include respond(phone) {
+      font-size: 1.8rem;
+      margin-bottom: 3rem;
+    }
 
     span {
       color: #ffea20;
@@ -17,12 +29,14 @@
 .containerCard {
   position: relative;
   width: 100%;
-  min-height: 75vh;
+  min-height: 72vh;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 60px;
   z-index: 0;
+  margin-bottom: 3rem;
+  align-content: center;
   @include backlight2();
 }
 
@@ -127,19 +141,3 @@
 
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// display: grid;
-// grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-// gap: 50px;
