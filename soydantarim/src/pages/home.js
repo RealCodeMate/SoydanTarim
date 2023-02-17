@@ -4,6 +4,8 @@ import image from "../assets/backgrounds/mission.jpg";
 import "../sass/pages/_home.scss";
 import Partners from "../components/partners";
 import { Link } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
+import { NavLink } from "react-router-dom";
 import p1 from "../assets/homeProductsImg/1.jpg";
 import p2 from "../assets/homeProductsImg/2.jpg";
 import p3 from "../assets/homeProductsImg/3.jpg";
@@ -138,7 +140,9 @@ export default function Home() {
               </div>
             </div>
             <div className="landingChoose__button__wrapper">
-              <a className="btn">Hakkımızda</a>
+              <Nav.Link as={NavLink} to="/hakkımızda">
+                <h3 className="btn">Hakkımızda</h3>
+              </Nav.Link>
             </div>
           </div>
           <div className="landingChoose__image">

@@ -104,17 +104,17 @@
       }
     }
 
-    .a {
+    .btn {
       text-decoration: none;
       position: relative;
       overflow: hidden;
     }
 
-    .a:hover {
+    .btn:hover {
       box-shadow: 1px 1px 25px 10px $color-primary;
     }
 
-    .a:before {
+    .btn:before {
       content: "";
       position: absolute;
       top: 0;
@@ -128,7 +128,7 @@
       transition: all 750ms;
     }
 
-    .a:hover:before {
+    .btn:hover:before {
       left: 100%;
     }
   }
@@ -320,7 +320,7 @@
     opacity: 0.6;
   }
 
-  a {
+  h3 {
     font-size: 1.3rem;
     letter-spacing: 2px;
     padding: 10px 80px;
