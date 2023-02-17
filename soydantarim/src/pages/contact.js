@@ -8,6 +8,7 @@ import Map, {
 } from "react-map-gl";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import "../sass/pages/_contact.scss";
+import GoToTop from "../utils/GoToTop";
 
 export default function Contact() {
     const [lng, setLng] = useState(34.54157517052495);
@@ -21,7 +22,7 @@ export default function Contact() {
         <div className="contact">
             <div className="contact__left">
                 <div className="contact__left__form">
-                <h2>Bizimle iletişime geçin</h2>
+                    <h2>Bizimle iletişime geçin</h2>
                     <form>
                         <input
                             name="displayName"
@@ -80,7 +81,7 @@ export default function Contact() {
                     </Map>
                 </div>
             </div>
-
+            <GoToTop />
         </div>
     )
 }

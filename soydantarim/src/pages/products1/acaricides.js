@@ -5,6 +5,7 @@ import Pagination from "../../components/pagination/Pagination";
 
 import "../../sass/pages/_productsA.scss";
 import acaricidesList from "../../utils/acaricidesList";
+import GoToTop from "../../utils/GoToTop";
 
 export default function Acaricides() {
     const [productData, setProductData] = useState(acaricidesList);
@@ -26,6 +27,7 @@ export default function Acaricides() {
                 setCurrentPage={setCurrentPage}
                 currentPage={currentPage}
             />
+            <GoToTop />
         </div>
     )
 }

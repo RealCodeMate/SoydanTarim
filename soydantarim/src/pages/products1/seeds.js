@@ -3,6 +3,7 @@ import ProductList from "../../components/pagination/ProductList";
 import Pagination from "../../components/pagination/Pagination";
 import seedsList from "../../utils/seedsList";
 import "../../sass/pages/_productsA.scss";
+import GoToTop from "../../utils/GoToTop";
 
 export default function Seeds() {
     const [productData, setProductData] = useState(seedsList);
@@ -23,6 +24,7 @@ export default function Seeds() {
                 setCurrentPage={setCurrentPage}
                 currentPage={currentPage}
             />
+            <GoToTop />
         </div>
     )
 }

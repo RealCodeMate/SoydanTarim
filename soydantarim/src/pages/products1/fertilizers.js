@@ -5,6 +5,7 @@ import Pagination from "../../components/pagination/Pagination";
 
 import "../../sass/pages/_productsA.scss";
 import fertilizersList from "../../utils/fertilizersList";
+import GoToTop from "../../utils/GoToTop";
 
 export default function Fertilizers() {
     const [productData, setProductData] = useState(fertilizersList);
@@ -26,6 +27,7 @@ export default function Fertilizers() {
                 setCurrentPage={setCurrentPage}
                 currentPage={currentPage}
             />
+            <GoToTop />
         </div>
     )
 }

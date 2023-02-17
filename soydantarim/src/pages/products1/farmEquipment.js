@@ -3,6 +3,7 @@ import ProductList from "../../components/pagination/ProductList";
 import Pagination from "../../components/pagination/Pagination";
 import farmEquipmentList from "../../utils/farmEquipmentList";
 import "../../sass/pages/_productsA.scss";
+import GoToTop from "../../utils/GoToTop";
 
 export default function FarmEquipment() {
     const [productData, setProductData] = useState(farmEquipmentList);
@@ -23,6 +24,7 @@ export default function FarmEquipment() {
                 setCurrentPage={setCurrentPage}
                 currentPage={currentPage}
             />
+            <GoToTop />
         </div>
     )
 }

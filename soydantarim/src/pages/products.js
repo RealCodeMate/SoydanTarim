@@ -1,6 +1,7 @@
 import react from "react";
 import "../sass/pages/_products.scss";
 import { Link } from "react-router-dom";
+import GoToTop from "../utils/GoToTop";
 
 export default function Products() {
   return (
@@ -60,6 +61,7 @@ export default function Products() {
           </div>
         </div>
       </div>
+      <GoToTop />
     </div>
   );
 }

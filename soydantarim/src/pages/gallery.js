@@ -40,6 +40,7 @@ import photo43 from "../assets/galleryImg/photo43.jpeg";
 import photo44 from "../assets/galleryImg/photo44.jpeg";
 
 import "../sass/pages/_gallery.scss";
+import GoToTop from "../utils/GoToTop";
 export default function Gallery() {
     return (
         <div id="parent">
@@ -368,6 +369,7 @@ export default function Gallery() {
                     </li>
                 </ul>
             </main>
+            <GoToTop />
         </div>
     );
 }

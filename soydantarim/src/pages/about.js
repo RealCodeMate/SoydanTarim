@@ -2,6 +2,7 @@ import "../sass/pages/_about.scss";
 import image from '../assets/backgrounds/about.jpeg'
 import mission from '../assets/backgrounds/mission.jpg'
 import vision from '../assets/backgrounds/vision.jpg'
+import GoToTop from "../utils/GoToTop";
 
 export default function About() {
     return (
@@ -49,6 +50,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
+            <GoToTop />
         </div>
     )
 }

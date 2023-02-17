@@ -5,6 +5,7 @@ import Pagination from "../../components/pagination/Pagination";
 
 import "../../sass/pages/_productsA.scss";
 import fungicidesList from "../../utils/fungicidesList";
+import GoToTop from "../../utils/GoToTop";
 
 const Fungicides = () => {
   const [productData, setProductData] = useState(fungicidesList);
@@ -26,6 +27,7 @@ const Fungicides = () => {
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
       />
+      <GoToTop />
     </div>
   );
 };

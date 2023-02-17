@@ -3,6 +3,7 @@ import ProductList from "../../components/pagination/ProductList";
 import Pagination from "../../components/pagination/Pagination";
 import insecticidesList from "../../utils/insecticidesList";
 import "../../sass/pages/_productsA.scss";
+import GoToTop from "../../utils/GoToTop";
 
 export default function Insecticides() {
     const [productData, setProductData] = useState(insecticidesList);
@@ -23,6 +24,7 @@ export default function Insecticides() {
                 setCurrentPage={setCurrentPage}
                 currentPage={currentPage}
             />
+            <GoToTop />
         </div>
     )
 }

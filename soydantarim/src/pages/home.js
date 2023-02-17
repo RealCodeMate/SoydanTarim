@@ -15,6 +15,7 @@ import icon2 from "../assets/icons/icon2.png";
 import icon3 from "../assets/icons/icon3.png";
 import icon4 from "../assets/icons/icon4.png";
 import LandingCarousel from "../components/landingCarousel";
+import GoToTop from "../utils/GoToTop";
 
 export default function Home() {
   return (
@@ -321,6 +322,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <GoToTop />
     </div>
   );
 }
