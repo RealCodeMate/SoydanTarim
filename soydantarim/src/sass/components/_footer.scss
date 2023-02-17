@@ -94,7 +94,11 @@ ul {
   margin-bottom: 10px;
 }
 
-.footer-col ul li a {
+a[href^="tel:"] {
+  text-decoration: none;
+}
+
+.footer-col ul li a h5 {
   font-size: 16px;
   text-transform: capitalize;
   color: #ffffff !important;
@@ -104,7 +108,7 @@ ul {
   cursor: pointer;
 }
 
-.footer-col ul li a:hover {
+.footer-col ul li a h5:hover {
   color: #ffffff;
   padding-left: 8px;
 }

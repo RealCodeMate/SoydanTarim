@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
-
+import Nav from "react-bootstrap/Nav";
+import { NavLink } from "react-router-dom";
 import "../sass/components/_footer.scss";
 
 export default function Footer() {
@@ -21,19 +22,29 @@ export default function Footer() {
               <h4>Soydan Tarım</h4>
               <ul>
                 <li>
-                  <a>Zirai ilaç</a>
+                  <Nav.Link as={NavLink} to="/ürünler">
+                    <h5>Zirai İlaçlar</h5>
+                  </Nav.Link>
                 </li>
                 <li>
-                  <a>gübre</a>
+                  <Nav.Link as={NavLink} to="/ürünler/gübreler">
+                    <h5>Gübreler</h5>
+                  </Nav.Link>
                 </li>
                 <li>
-                  <a>tohum</a>
+                  <Nav.Link as={NavLink} to="/ürünler/tohumlar">
+                    <h5>Tohumlar</h5>
+                  </Nav.Link>
                 </li>
                 <li>
-                  <a>fide</a>
+                  <Nav.Link as={NavLink} to="/ürünler/fideler">
+                    <h5>Fideler</h5>
+                  </Nav.Link>
                 </li>
                 <li>
-                  <a>tarım aletleri</a>
+                  <Nav.Link as={NavLink} to="/ürünler/tarım-aletleri">
+                    <h5>Tarım Aletleri</h5>
+                  </Nav.Link>
                 </li>
               </ul>
             </div>
@@ -41,19 +52,29 @@ export default function Footer() {
               <h4>Site Haritası</h4>
               <ul>
                 <li>
-                  <a href="#">Anasayfa</a>
+                  <Nav.Link as={NavLink} to="/">
+                    <h5>Anasayfa</h5>
+                  </Nav.Link>
                 </li>
                 <li>
-                  <a href="#">Ürünler</a>
+                  <Nav.Link as={NavLink} to="/ürünler">
+                    <h5>Ürünler</h5>
+                  </Nav.Link>
                 </li>
                 <li>
-                  <a href="#">Galeri</a>
+                  <Nav.Link as={NavLink} to="/galeri">
+                    <h5>Galeri</h5>
+                  </Nav.Link>
                 </li>
                 <li>
-                  <a href="#">Hakkımızda</a>
+                  <Nav.Link as={NavLink} to="/hakkımızda">
+                    <h5>Hakkımızda</h5>
+                  </Nav.Link>
                 </li>
                 <li>
-                  <a href="#">İletişim</a>
+                  <Nav.Link as={NavLink} to="/iletişim">
+                    <h5>İletişim</h5>
+                  </Nav.Link>
                 </li>
               </ul>
             </div>
@@ -61,10 +82,23 @@ export default function Footer() {
               <h4>İletişim</h4>
               <ul>
                 <li>
-                  <a>Yeni mahalle, Sanayi Cd. 3/c, 33330 Mezitli/Mersin</a>
+                  <Nav.Link as={NavLink} to="/iletişim">
+                    <h5>Yeni mahalle, Sanayi Cd. 3/c, 33330 Mezitli/Mersin</h5>
+                  </Nav.Link>
                 </li>
                 <li>
-                  <a>(0324) 359 42 57</a>
+                  <a href="tel:0-324-359-4257">
+                    <h5>
+                      (0324) 359 42 57
+                    </h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:90-532-545-3258">
+                    <h5>
+                      +90 532 545 32 58
+                    </h5>
+                  </a>
                 </li>
               </ul>
             </div>
