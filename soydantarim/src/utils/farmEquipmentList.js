@@ -37,13 +37,43 @@ const farmEquipmentList = [
     },
     {
         "id": "alet7",
-        "name":"Kürek ve Kazma",
+        "name":"Testere",
         "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
         "info": ""
     },
     {
         "id": "alet8",
-        "name":"Tırmık",
+        "name":"Elektrikli İlaçlama ",
+        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "info": "Makinaları"
+    },
+    {
+        "id": "alet9",
+        "name":"Benzinli İlaçlama ",
+        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "info": "Makinaları"
+    },
+    {
+        "id": "alet10",
+        "name":"Benzinli Sırt İlaçlama ",
+        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "info": "Makinaları"
+    },
+    {
+        "id": "alet11",
+        "name":"Akülü Bahçe Makası",
+        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "info": ""
+    },
+    {
+        "id": "alet11",
+        "name":"Akülü Sırt Tulumbası",
+        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "info": ""
+    },
+    {
+        "id": "alet12",
+        "name":"Tırpan Makinaları",
         "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
         "info": ""
     },
