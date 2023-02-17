@@ -4,7 +4,7 @@ import bayerLogo from "../assets/partnersLogo/bayerLogo.png";
 import dogatechLogo from "../assets/partnersLogo/dogatechLogo.png";
 import akcLogo from "../assets/partnersLogo/akcLogo.png";
 import biolchimLogo from "../assets/partnersLogo/biolchimLogo.png";
-import octaviusLogo from "../assets/partnersLogo/octaviusLogo.png";
+import mentaLogo from "../assets/partnersLogo/mentaLogo.png";
 export default function Partners() {
     return (
         <div className='partners'>
@@ -17,7 +17,7 @@ export default function Partners() {
                     <img src={bayerLogo} className="companyImg" alt='bayer_Logo' />
                 </div>
                 <div className='logo'>
-                    <img src={octaviusLogo} className="companyImg" alt='octavius_Logo' />
+                    <img src={mentaLogo} className="companyImg" alt='menta_Logo' />
                 </div>
                 <div className='logo'>
                     <img src={akcLogo} className="companyImg" alt='akc_Logo' />
