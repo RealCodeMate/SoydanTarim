@@ -8,9 +8,8 @@
   z-index: 1;
 
   &-nav {
-    
     .dropdown-item.active {
-      background-color:inherit;
+      background-color: inherit;
     }
 
     .dropdown a {
@@ -40,8 +39,8 @@
 
   .navbar-brand {
     img {
-      height: 80px;
-      width: 140px;
+      height: 40px;
+      width: 100px;
     }
   }
 

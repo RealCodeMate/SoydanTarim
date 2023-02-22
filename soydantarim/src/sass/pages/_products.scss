@@ -37,7 +37,7 @@
   z-index: 0;
   margin-bottom: 3rem;
   align-content: center;
-  @include backlight2();
+  @include backlight();
 }
 
 .card {
@@ -45,7 +45,7 @@
   width: 300px;
   height: 450px !important;
   padding: 0 !important;
-  --color: #ffea20;
+  --color: #ffe9208c;
   z-index: 1;
 
   &::before {
@@ -57,7 +57,6 @@
     transform: skewY(-15deg);
     transition: 0.5s ease-in-out;
     z-index: 0;
-
   }
 
   &::after {
@@ -91,7 +90,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background: #004109;
+    background: #004109ad;
     gap: 20px;
     overflow: hidden;
     z-index: 10;
@@ -116,21 +115,20 @@
 
         &:hover {
           color: #ffea20;
-
         }
       }
 
       a {
         position: relative;
         display: inline-block;
-        background: #ffea20;
-        color: #2e2e2e;
+        background: #ffe9208c;
+        color: #fff;
         text-decoration: none;
         font-weight: 500;
         margin-bottom: 2rem;
         margin-top: 1rem;
         padding: 8px 15px;
-        transition: all .4s ease;
+        transition: all 0.4s ease;
 
         &:hover {
           background: #2e2e2e;
@@ -138,6 +136,5 @@
         }
       }
     }
-
   }
 }

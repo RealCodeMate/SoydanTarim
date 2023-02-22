@@ -1,6 +1,8 @@
 import react from "react";
 import CommentCarousel from "../components/carousel";
-import image from "../assets/backgrounds/mission.jpg";
+import img1 from "../assets/backgrounds/img1.jpg";
+import img2 from "../assets/backgrounds/img2.jpg";
+import img3 from "../assets/backgrounds/img3.jpg";
 import "../sass/pages/_home.scss";
 import Partners from "../components/partners";
 import { Link } from "react-router-dom";
@@ -16,6 +18,7 @@ import icon1 from "../assets/icons/icon1.png";
 import icon2 from "../assets/icons/icon2.png";
 import icon3 from "../assets/icons/icon3.png";
 import icon4 from "../assets/icons/icon4.png";
+import soydanTarimLogo from "../assets/soydanTarimLogo.png";
 import LandingCarousel from "../components/landingCarousel";
 import GoToTop from "../utils/GoToTop";
 
@@ -24,25 +27,22 @@ export default function Home() {
     <div>
       <div className="landingPage">
         <div className="landingPage__container">
-          <h2>
-            Soydan Tarım
-          </h2>
+          <h2>Soydan Tarım</h2>
           <h5>
             Zirai ilaç, gübre, tohum, fide ve tarım aletleri, Mersin'in en
             iyisi.
           </h5>
-          <a>Keşfet</a>
+          <a href="">Keşfet</a>
         </div>
         <div className="landingPage__content">
-
           <LandingCarousel />
         </div>
       </div>
       <div className="section2">
         <div className="landingImages">
-          <img src={image} className="img1" />
-          <img src={image} className="img1" />
-          <img src={image} className="img1" />
+          <img src={img2} className="img1" />
+          <img src={img1} className="img1" />
+          <img src={img3} className="img1" />
         </div>
         <div className="landingInfo">
           <div className="landingInfo__slogan">
@@ -73,10 +73,7 @@ export default function Home() {
         <div className="landingChoose">
           <div className="landingChoose__texts">
             <h1>Neden Soydan Tarım?</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at
-              nisl consequat, auctor augue et, facilisis diam.
-            </p>
+
             <div className="services">
               <div className="services__heading">
                 <img
@@ -90,7 +87,6 @@ export default function Home() {
                 ></img>
                 <div className="services__texts">
                   <h4>Mükemmel Hizmet</h4>
-                  <p>Lorem ipsum dolor sit</p>
                 </div>
               </div>
               <div className="services__heading">
@@ -105,7 +101,6 @@ export default function Home() {
                 ></img>
                 <div className="services__texts">
                   <h4>Temiz Çalışma</h4>
-                  <p>Lorem ipsum dolor sit</p>
                 </div>
               </div>
               <div className="services__heading">
@@ -120,7 +115,6 @@ export default function Home() {
                 ></img>
                 <div className="services__texts">
                   <h4>Kalite ve Güvenilirlik</h4>
-                  <p>Lorem ipsum dolor sit</p>
                 </div>
               </div>
               <div className="services__heading">
@@ -135,7 +129,6 @@ export default function Home() {
                 ></img>
                 <div className="services__texts">
                   <h4>Uzman Çiftçi</h4>
-                  <p>Lorem ipsum dolor sit</p>
                 </div>
               </div>
             </div>
@@ -146,7 +139,7 @@ export default function Home() {
             </div>
           </div>
           <div className="landingChoose__image">
-            <img src={image} className="img1" />
+            <img src={soydanTarimLogo} className="img1" />
           </div>
         </div>
 
