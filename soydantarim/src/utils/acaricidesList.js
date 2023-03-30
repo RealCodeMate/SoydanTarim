@@ -54,9 +54,9 @@ const acaricidesList = [
         "info": "1 Kg"
     },
     {
-        "id": "ilac01",
+        "id": "ilac10",
         "name": "Passat",
-        "image": "https://scontent.fsaw1-15.fna.fbcdn.net/v/t39.30808-6/269927118_2948309202053532_457281260615736037_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=973b4a&_nc_ohc=d4TNYgGTrycAX83iN4k&_nc_ht=scontent.fsaw1-15.fna&oh=00_AfAsKbi8UTBpNOwMq5sHZg-XR_tHPlUArl2MMH6a_jfnDQ&oe=64105965",
+        "image": "",
         "info": "1 Lt"
     },
     {

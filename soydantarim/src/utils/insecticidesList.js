@@ -196,8 +196,7 @@ const insecticidesList = [
   {
     id: "ilac29",
     name: "Quink Pos Tb",
-    image:
-      "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+    image:"",
     info: "90 Gr",
   },
   {

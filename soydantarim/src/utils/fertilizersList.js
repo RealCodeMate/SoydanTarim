@@ -8,13 +8,13 @@ const fertilizersList = [
     {
         "id": "ilac2",
         "name": "Stweet",
-        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "image": "",
         "info": "500 CC"
     },
     {
         "id": "ilac3",
         "name": "AKC Org. Plus Toz",
-        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "image": "",
         "info": "25K"
     },
     {
@@ -56,7 +56,7 @@ const fertilizersList = [
     {
         "id": "ilac10",
         "name": "Sequplant",
-        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "image": "",
         "info": "1 Kg"
     },
     {
@@ -74,7 +74,7 @@ const fertilizersList = [
     {
         "id": "ilac13",
         "name": "Nivamic Ferrix",
-        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "image": "",
         "info": "1 Kg"
     },
     {
@@ -140,7 +140,7 @@ const fertilizersList = [
     {
         "id": "ilac24",
         "name": "PH5",
-        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "image": "",
         "info": "1 Lt"
     },
     {
@@ -158,7 +158,7 @@ const fertilizersList = [
     {
         "id": "ilac27",
         "name": "Multicomb",
-        "image": "https://scontent.fsaw1-11.fna.fbcdn.net/v/t39.30808-6/250092569_158371099827858_2819888249827335525_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a26aad&_nc_ohc=t4U9iAVJwecAX_plwdI&_nc_ht=scontent.fsaw1-11.fna&oh=00_AfDS9yNOU9NiEmjTvmmRm6Pu8iX5wu3aP7kgmFCp7IYCFw&oe=640FB7A9",
+        "image":"",
         "info": "1 Kg"
     },
     {
@@ -170,7 +170,7 @@ const fertilizersList = [
     {
         "id": "ilac29",
         "name": "Caracas",
-        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "image": "",
         "info": "1 Lt"
     },
     {
@@ -242,7 +242,7 @@ const fertilizersList = [
     {
         "id": "ilac41",
         "name": "Green Plus 10.10.40",
-        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "image": "",
         "info": "25 Kg"
     },
     {
@@ -254,7 +254,7 @@ const fertilizersList = [
     {
         "id": "ilac43",
         "name": "Green Plus 16.8.24",
-        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "image": "",
         "info": "25 Kg"
     },
     {
@@ -284,7 +284,7 @@ const fertilizersList = [
     {
         "id": "ilac48",
         "name": "Maxifruit",
-        "image": "https://www.timacagro.com/app/uploads/sites/48/2022/09/Maxifruit.png",
+        "image": "",
         "info": "1 Lt"
     },
     {
@@ -350,7 +350,7 @@ const fertilizersList = [
     {
         "id": "ilac58",
         "name": "Glory N30",
-        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "image": "",
         "info": "20 Lt"
     },
     {
@@ -368,7 +368,7 @@ const fertilizersList = [
     {
         "id": "ilac61",
         "name": "Store",
-        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "image": "",
         "info": "10 Kg"
     },
     {
@@ -386,7 +386,7 @@ const fertilizersList = [
     {
         "id": "ilac64",
         "name": "Quex",
-        "image": "https://i.picsum.photos/id/70/200/200.jpg?hmac=hRU7tEHltyLUTf0bCrAWFXlPRXOBTsvCcvL-dIUG2CE",
+        "image": "",
         "info": "1 Lt"
     },
     {

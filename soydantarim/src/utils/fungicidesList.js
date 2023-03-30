@@ -41,8 +41,7 @@ const fungicidesList = [
   {
     id: "ilac8",
     name: "Zirag",
-    image:
-      "https://i.picsum.photos/id/880/200/200.jpg?hmac=g5VV-eqqKk9TdTvkzKu6PzjRtzrqVhrj6v7H9ZT7PDo",
+    image:"",
     info: "800 Gr",
   },
   {
@@ -183,8 +182,7 @@ const fungicidesList = [
   {
     id: "ilac36",
     name: "Rally",
-    image:
-      "",
+    image:"",
     info: "250 Gr",
   },
   {
