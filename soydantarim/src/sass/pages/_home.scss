@@ -270,7 +270,7 @@
 
   &__desc {
     width: 50%;
-    padding: 1rem;
+    padding: 4rem;
     font-size: 1.1rem;
     font-weight: bold;
     color: $color-primary;
@@ -289,11 +289,12 @@
     }
 
     @include respond(tab-port) {
-      font-size: 0.7rem;
+      font-size: 1rem;
     }
 
     @include respond(phone) {
-      font-size: 0.7rem;
+      font-size: 1rem;
+      padding: 2rem;
       text-align: left;
     }
   }
@@ -525,7 +526,6 @@
       z-index: 100;
       color: #fff;
       margin: 0;
-      text-transform: uppercase;
     }
 
     h5 {
