@@ -53,19 +53,10 @@ export default function Home() {
           </div>
           <div className="landingInfo__desc">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at
-              nisl consequat, auctor augue et, facilisis diam. Ut euismod
-              placerat lacus eu tempus. Sed quis ligula urna. Mauris facilisis
-              massa mauris, eget gravida dolor tempus vel. Aenean feugiat nunc a
-              ex imperdiet, eu egestas dolor ultriciesLorem ipsum dolor sit
-              amet, consectetur adipiscing elit. Nullam at nisl consequat,
-              auctor augue et, facilisis diam. Ut euismod placerat lacus eu
-              tempus. Sed quis ligula urna. Mauris facilisis massa mauris, eget
-              gravida dolor tempus vel. Aenean feugiat nunc a ex imperdiet, eu
-              egestas dolor ultriciesLorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Nullam at nisl consequat, auctor augue et,
-              facilisis diam. Ut euismod placerat lacus eu tempus. Sed quis
-              ligula urna.
+              Tarım İlaçları, sivrisinekler, keneler ve fareler gibi çeşitli zararlıları ve hastalık
+              taşıyıcılarını kontrol etmek için kullanılır. Tarım İlaçları, tarımda yabani otları,
+              Pek çok farklı böcek ilacı türü vardır; her birinin belirli zararlılara karşı etkili
+              olması amaçlanmıştır.
             </p>
           </div>
         </div>

@@ -21,15 +21,15 @@ export default function About() {
                 <div className="about__middle--banner">
                     <div className="about__middle--banner--1">
                         <h3>Güvenilir</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>İnsanların tercih ettiği en güvenilir zirai ilaçlama adresi</p>
                     </div>
                     <div className="about__middle--banner--2">
                         <h3>Profesyonel</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Çözüm odaklı profesyonel bir hizmet için tek adres</p>
                     </div>
                     <div className="about__middle--banner--3">
                         <h3>Uzman</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Alanında uzmanlaşmış kişiler tarafından kaliteli çözümler </p>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@ export default function About() {
                 <div className="about__bottom--mission">
                     <div className="mission">
                         <h1>Misyonumuz</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Çeşitli planlar, programlar ve refah önlemleri yoluyla çiftçilere artan net çiftlik geliri sağlarken, çevre dostu bilim ve teknolojiyi kullanarak tarımsal-bahçe bitkilerinin üretimini ve üretkenliğini artırmak.</p>
                     </div>
                         <img src={mission} className="img__mission" />
                 </div>
@@ -46,7 +46,7 @@ export default function About() {
                     <img src={vision} className="img__vision" />
                     <div className="vision">
                         <h1>Vizyonumuz</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>İnsanlara gıda ve beslenme güvenliği sağlamak ve Tarımı sürdürülebilirlik ile karlı ve çekici bir işletme haline getirmek.</p>
                     </div>
                 </div>
             </div>
