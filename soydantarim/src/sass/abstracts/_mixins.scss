@@ -6,9 +6,7 @@
     right: 0;
     z-index: -1;
     height: 100%;
-    max-width: 95%;
-    margin: auto;
-    -webkit-filter: blur(60px);
+    --webkit-filter: blur(60px);
     background: linear-gradient(to bottom, #a4be7bb7, #a4be7be3);
   }
 }
