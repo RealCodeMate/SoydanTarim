@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Map, {
     Marker,
     ScaleControl,
@@ -9,6 +9,7 @@ import Map, {
 import 'mapbox-gl/dist/mapbox-gl.css';
 import "../sass/pages/_contact.scss";
 import GoToTop from "../utils/GoToTop";
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
     const [lng, setLng] = useState(34.54157517052495);
@@ -18,17 +19,63 @@ export default function Contact() {
         window.open(url, "_blank", "noopener,noreferrer");
     };
 
+    const [inputs, setInputs] = useState({
+        displayName: "",
+        email: "",
+        message: "",
+    });
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setInputs((prevState) => {
+            return {
+                ...prevState,
+                [name]: value,
+            };
+        });
+    };
+
+    const form = useRef();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'gmail',
+            'template_63jc18j',
+            form.current,
+            'user_RimOnGyUfCEMCL9yCSP74'
+        )
+            .then((result) => {
+                alert('Teşekkürler ' + inputs.displayName + '😊');
+            }, (error) => {
+                alert(error.text);
+            });
+
+        setInputs(
+            {
+                displayName: "",
+                email: "",
+                message: "",
+            }
+        )
+    };
+
+    const { displayName, email, message } = inputs;
+
     return (
         <div className="contact">
             <div className="contact__left">
                 <div className="contact__left__form">
                     <h2>Bizimle iletişime geçin</h2>
-                    <form>
+                    <form ref={form} onSubmit={handleSubmit}>
                         <input
                             name="displayName"
                             type="text"
                             className="feedback-input"
-                            placeholder="Isim"
+                            placeholder="İsim-Soyisim"
+                            value={displayName}
+                            onChange={handleChange}
                         />
                         <input
                             name="email"
@@ -36,11 +83,15 @@ export default function Contact() {
                             required
                             className="feedback-input"
                             placeholder="Email"
+                            value={email}
+                            onChange={handleChange}
                         />
                         <textarea
                             name="message"
                             className="feedback-input-2"
                             placeholder="Mesaj"
+                            value={message}
+                            onChange={handleChange}
                         />
                         <input type="submit" value={'Gönder'} />
                     </form>
