@@ -32,7 +32,9 @@ export default function Home() {
             Zirai ilaç, gübre, tohum, fide ve tarım aletleri, Mersin'in en
             iyisi.
           </h5>
-          <a href="">Keşfet</a>
+          <Nav.Link as={NavLink} to="/ürünler">
+                <h3 className="btn">Keşfet</h3>
+              </Nav.Link>
         </div>
         <div className="landingPage__content">
           <LandingCarousel />

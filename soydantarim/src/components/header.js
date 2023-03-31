@@ -22,7 +22,7 @@ export default function Header() {
           aria-labelledby="offcanvasNavbarLabel-expand-lg"
           placement="start"
         >
-          <Offcanvas.Header  onClick={() => setExpanded(false)}>
+          <Offcanvas.Header closeButton onClick={() => setExpanded(false)}>
             <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
               Menü
             </Offcanvas.Title>
