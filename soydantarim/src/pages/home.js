@@ -1,19 +1,10 @@
 import react from "react";
 import CommentCarousel from "../components/carousel";
-import img1 from "../assets/backgrounds/img1.jpg";
-import img2 from "../assets/backgrounds/img2.jpg";
-import img3 from "../assets/backgrounds/img3.jpg";
 import "../sass/pages/_home.scss";
 import Partners from "../components/partners";
 import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router-dom";
-import p1 from "../assets/homeProductsImg/1.jpg";
-import p2 from "../assets/homeProductsImg/2.jpg";
-import p3 from "../assets/homeProductsImg/3.jpg";
-import p4 from "../assets/homeProductsImg/4.jpg";
-import p5 from "../assets/homeProductsImg/5.jpg";
-import p6 from "../assets/homeProductsImg/6.jpg";
 import icon1 from "../assets/icons/icon1.png";
 import icon2 from "../assets/icons/icon2.png";
 import icon3 from "../assets/icons/icon3.png";
@@ -42,9 +33,9 @@ export default function Home() {
       </div>
       <div className="section2">
         <div className="landingImages">
-          <img src={img2} className="img1" />
-          <img src={img1} className="img1" />
-          <img src={img3} className="img1" />
+          <img src="https://raw.githubusercontent.com/RealCodeMate/SoydanTarim/main/soydantarim/src/assets/backgrounds/img2.jpg" className="img1" />
+          <img src="https://raw.githubusercontent.com/RealCodeMate/SoydanTarim/main/soydantarim/src/assets/backgrounds/img1.jpg" className="img1" />
+          <img src="https://raw.githubusercontent.com/RealCodeMate/SoydanTarim/main/soydantarim/src/assets/backgrounds/img3.jpg" className="img1" />
         </div>
         <div className="landingInfo">
           <div className="landingInfo__slogan">
@@ -164,7 +155,7 @@ export default function Home() {
                 </Link>
               </div>
 
-              <img src={p1}></img>
+              <img src="https://raw.githubusercontent.com/RealCodeMate/SoydanTarim/main/soydantarim/src/assets/homeProductsImg/1.jpg"></img>
             </div>
             <div class="card-hover">
               <div class="card-hover__content">
@@ -191,7 +182,7 @@ export default function Home() {
                 </Link>
               </div>
 
-              <img src={p2}></img>
+              <img src="https://raw.githubusercontent.com/RealCodeMate/SoydanTarim/main/soydantarim/src/assets/homeProductsImg/2.jpg"></img>
             </div>
             <div class="card-hover">
               <div class="card-hover__content">
@@ -218,7 +209,7 @@ export default function Home() {
                 </Link>
               </div>
 
-              <img src={p3}></img>
+              <img src="https://raw.githubusercontent.com/RealCodeMate/SoydanTarim/main/soydantarim/src/assets/homeProductsImg/3.jpg"></img>
             </div>
             <div class="card-hover">
               <div class="card-hover__content">
@@ -245,7 +236,7 @@ export default function Home() {
                 </Link>
               </div>
 
-              <img src={p4}></img>
+              <img src="https://raw.githubusercontent.com/RealCodeMate/SoydanTarim/main/soydantarim/src/assets/homeProductsImg/4.jpg"></img>
             </div>
             <div class="card-hover">
               <div class="card-hover__content">
@@ -272,7 +263,7 @@ export default function Home() {
                 </Link>
               </div>
 
-              <img src={p5}></img>
+              <img src="https://raw.githubusercontent.com/RealCodeMate/SoydanTarim/main/soydantarim/src/assets/homeProductsImg/5.jpg"></img>
             </div>
             <div class="card-hover">
               <div class="card-hover__content">
@@ -297,7 +288,7 @@ export default function Home() {
                 </Link>
               </div>
 
-              <img src={p6}></img>
+              <img src="https://raw.githubusercontent.com/RealCodeMate/SoydanTarim/main/soydantarim/src/assets/homeProductsImg/6.jpg"></img>
             </div>
           </div>
         </div>
