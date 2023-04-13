@@ -20,12 +20,12 @@ export default function Home() {
         <div className="landingPage__container">
           <h2>Soydan Tarım</h2>
           <h5>
-            Zirai ilaç, gübre, tohum, fide ve tarım aletleri, Mersin'in en
-            iyisi.
+            Zirai İlaç, Gübre, Tohum, Fide ve Tarım Aletleri, Mersin'in En
+            İyisi.
           </h5>
           <Nav.Link as={NavLink} to="/ürünler">
-                <h3 className="btn">Keşfet</h3>
-              </Nav.Link>
+            <h3 className="btn">Keşfet</h3>
+          </Nav.Link>
         </div>
         <div className="landingPage__content">
           <LandingCarousel />
@@ -40,16 +40,17 @@ export default function Home() {
         <div className="landingInfo">
           <div className="landingInfo__slogan">
             <h3>
-              Üreticiler için Mersin'in
-              <br /> En Gözde Tarım ve Zirai İlaçları
+              Üreticiler için Mersin'de en
+              <br />kaliteli tarım ilaçları ve gübreleri
             </h3>
           </div>
           <div className="landingInfo__desc">
             <p>
-              Tarım İlaçları, sivrisinekler, keneler ve fareler gibi çeşitli zararlıları ve hastalık
-              taşıyıcılarını kontrol etmek için kullanılır. Tarım İlaçları, tarımda yabani otları,
-              Pek çok farklı böcek ilacı türü vardır; her birinin belirli zararlılara karşı etkili
-              olması amaçlanmıştır.
+              Tarım ilaçları, bitkilerin gelişimine ve verimine zarar
+              veren hastalık ve zararları doğal dengeyi bozmadan kontrol
+              altına alınmasını sağlar. Ayrıca üretim alanlarındaki
+              yabancı otları kontrol altına almak içinde kullanılmakta
+              olanlarıda mevcuttur.
             </p>
           </div>
         </div>
@@ -112,7 +113,7 @@ export default function Home() {
                   }}
                 ></img>
                 <div className="services__texts">
-                  <h4>Uzman Çiftçi</h4>
+                  <h4>Uzman Mühendis</h4>
                 </div>
               </div>
             </div>
@@ -246,7 +247,7 @@ export default function Home() {
                 <p class="card-hover__text">
                   Kültivatör, Saban, Fıskiye ve daha fazlası.
                 </p>
-                <Link to="/ürünler/fungisitler" className="card-hover__link">
+                <Link to="/ürünler/tarım-aletleri" className="card-hover__link">
                   <span>Keşfet</span>
                   <svg
                     fill="none"
@@ -271,7 +272,7 @@ export default function Home() {
                   Zeytin<span>yağı</span>
                 </h3>
                 <p class="card-hover__text">Organik Zeytinyağı</p>
-                <Link to="/ürünler/fungisitler" className="card-hover__link">
+                <Link to="/iletişim" className="card-hover__link">
                   <span>Keşfet</span>
                   <svg
                     fill="none"
