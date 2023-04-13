@@ -170,13 +170,13 @@ const fertilizersList = [
     {
         "id": "ilac29",
         "name": "Caracas",
-        "image": "",
+        "image": "https://github.com/RealCodeMate/SoydanTarim/blob/main/soydantarim/src/assets/galleryImg/caracas.jpeg?raw=true",
         "info": "1 Lt"
     },
     {
         "id": "ilac30",
         "name": "Alles",
-        "image": "https://i.ebayimg.com/images/g/iIoAAOSwtJtiGHz8/s-l640.jpg",
+        "image": "https://github.com/RealCodeMate/SoydanTarim/blob/main/soydantarim/src/assets/galleryImg/alles.jpeg?raw=true",
         "info": "1 Kg"
     },
     {
@@ -368,7 +368,7 @@ const fertilizersList = [
     {
         "id": "ilac61",
         "name": "Store",
-        "image": "",
+        "image": "https://github.com/RealCodeMate/SoydanTarim/blob/main/soydantarim/src/assets/galleryImg/store.jpeg?raw=true",
         "info": "10 Kg"
     },
     {
